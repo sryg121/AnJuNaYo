@@ -7,11 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4DA39E922818115001CC984 /* StoreListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA39E822818115001CC984 /* StoreListVC.swift */; };
+		F4022C48229416EA00DD3A52 /* RouletteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C47229416EA00DD3A52 /* RouletteVC.swift */; };
+		F4022C4B2294173700DD3A52 /* RouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C4A2294173700DD3A52 /* RouletteView.swift */; };
+		F4022C4D2294195900DD3A52 /* GZLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C4C2294195900DD3A52 /* GZLog.swift */; };
+		F4022C4F229419EC00DD3A52 /* roulette_fin.png in Resources */ = {isa = PBXBuildFile; fileRef = F4022C4E229419EC00DD3A52 /* roulette_fin.png */; };
+		F4022C5422941C2600DD3A52 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C5322941C2600DD3A52 /* SettingVC.swift */; };
+		F4022C5622941E8400DD3A52 /* StoreCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C5522941E8400DD3A52 /* StoreCollectionVC.swift */; };
+		F4022C5822941EB400DD3A52 /* StoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C5722941EB400DD3A52 /* StoreCollectionViewCell.swift */; };
+		F4022C5A2294230C00DD3A52 /* StoreDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C592294230C00DD3A52 /* StoreDetailVC.swift */; };
+		F4022C5C22966B4A00DD3A52 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C5B22966B4A00DD3A52 /* SettingCell.swift */; };
+		F4022C6022966C6E00DD3A52 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C5F22966C6E00DD3A52 /* Setting.swift */; };
+		F4022C622296819F00DD3A52 /* weather_sample.png in Resources */ = {isa = PBXBuildFile; fileRef = F4022C612296819F00DD3A52 /* weather_sample.png */; };
+		F4022C6422968E9C00DD3A52 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C6322968E9C00DD3A52 /* RecommendCollectionViewCell.swift */; };
+		F4022C6622968F0C00DD3A52 /* RecommendDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C6522968F0C00DD3A52 /* RecommendDetailVC.swift */; };
+		F4022C68229690CE00DD3A52 /* RecommendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C67229690CE00DD3A52 /* RecommendData.swift */; };
+		F4022C6E229693EA00DD3A52 /* sf1.png in Resources */ = {isa = PBXBuildFile; fileRef = F4022C6B229693EA00DD3A52 /* sf1.png */; };
+		F4022C712296A0B600DD3A52 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C702296A0B600DD3A52 /* Weather.swift */; };
+		F4022C752297DDF600DD3A52 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C742297DDF600DD3A52 /* WeatherTableViewCell.swift */; };
 		F4DA39EB228181E5001CC984 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA39EA228181E5001CC984 /* Store.swift */; };
-		F4DA39ED22818561001CC984 /* StoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA39EC22818561001CC984 /* StoreCell.swift */; };
 		F4FDE4EA227C2A5F00ECCE9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDE4E9227C2A5F00ECCE9C /* AppDelegate.swift */; };
-		F4FDE4EC227C2A5F00ECCE9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDE4EB227C2A5F00ECCE9C /* ViewController.swift */; };
+		F4FDE4EC227C2A5F00ECCE9C /* RecommendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDE4EB227C2A5F00ECCE9C /* RecommendVC.swift */; };
 		F4FDE4EF227C2A5F00ECCE9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4FDE4ED227C2A5F00ECCE9C /* Main.storyboard */; };
 		F4FDE4F2227C2A5F00ECCE9C /* project_softwarestudio_anjunayo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4FDE4F0227C2A5F00ECCE9C /* project_softwarestudio_anjunayo.xcdatamodeld */; };
 		F4FDE4F4227C2A6100ECCE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4FDE4F3227C2A6100ECCE9C /* Assets.xcassets */; };
@@ -19,12 +34,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F4DA39E822818115001CC984 /* StoreListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListVC.swift; sourceTree = "<group>"; };
+		F4022C47229416EA00DD3A52 /* RouletteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteVC.swift; sourceTree = "<group>"; };
+		F4022C4A2294173700DD3A52 /* RouletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteView.swift; sourceTree = "<group>"; };
+		F4022C4C2294195900DD3A52 /* GZLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GZLog.swift; sourceTree = "<group>"; };
+		F4022C4E229419EC00DD3A52 /* roulette_fin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roulette_fin.png; sourceTree = "<group>"; };
+		F4022C5322941C2600DD3A52 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		F4022C5522941E8400DD3A52 /* StoreCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCollectionVC.swift; sourceTree = "<group>"; };
+		F4022C5722941EB400DD3A52 /* StoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4022C592294230C00DD3A52 /* StoreDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailVC.swift; sourceTree = "<group>"; };
+		F4022C5B22966B4A00DD3A52 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		F4022C5F22966C6E00DD3A52 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		F4022C612296819F00DD3A52 /* weather_sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_sample.png; sourceTree = "<group>"; };
+		F4022C6322968E9C00DD3A52 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4022C6522968F0C00DD3A52 /* RecommendDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendDetailVC.swift; sourceTree = "<group>"; };
+		F4022C67229690CE00DD3A52 /* RecommendData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendData.swift; sourceTree = "<group>"; };
+		F4022C6B229693EA00DD3A52 /* sf1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sf1.png; sourceTree = "<group>"; };
+		F4022C702296A0B600DD3A52 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		F4022C742297DDF600DD3A52 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		F4DA39EA228181E5001CC984 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		F4DA39EC22818561001CC984 /* StoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCell.swift; sourceTree = "<group>"; };
 		F4FDE4E6227C2A5F00ECCE9C /* project_softwarestudio_anjunayo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project_softwarestudio_anjunayo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FDE4E9227C2A5F00ECCE9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4FDE4EB227C2A5F00ECCE9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4FDE4EB227C2A5F00ECCE9C /* RecommendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendVC.swift; sourceTree = "<group>"; };
 		F4FDE4EE227C2A5F00ECCE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4FDE4F1227C2A5F00ECCE9C /* project_softwarestudio_anjunayo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = project_softwarestudio_anjunayo.xcdatamodel; sourceTree = "<group>"; };
 		F4FDE4F3227C2A6100ECCE9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +73,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4022C49229416F100DD3A52 /* roulette */ = {
+			isa = PBXGroup;
+			children = (
+				F4022C47229416EA00DD3A52 /* RouletteVC.swift */,
+				F4022C4A2294173700DD3A52 /* RouletteView.swift */,
+				F4022C4E229419EC00DD3A52 /* roulette_fin.png */,
+			);
+			path = roulette;
+			sourceTree = "<group>";
+		};
+		F4022C5022941B4700DD3A52 /* weatherRecommend */ = {
+			isa = PBXGroup;
+			children = (
+				F4FDE4EB227C2A5F00ECCE9C /* RecommendVC.swift */,
+				F4022C6322968E9C00DD3A52 /* RecommendCollectionViewCell.swift */,
+				F4022C6522968F0C00DD3A52 /* RecommendDetailVC.swift */,
+				F4022C612296819F00DD3A52 /* weather_sample.png */,
+				F4022C67229690CE00DD3A52 /* RecommendData.swift */,
+				F4022C6B229693EA00DD3A52 /* sf1.png */,
+				F4022C742297DDF600DD3A52 /* WeatherTableViewCell.swift */,
+			);
+			path = weatherRecommend;
+			sourceTree = "<group>";
+		};
+		F4022C5122941B7300DD3A52 /* hotPlace */ = {
+			isa = PBXGroup;
+			children = (
+				F4DA39EA228181E5001CC984 /* Store.swift */,
+				F4022C5522941E8400DD3A52 /* StoreCollectionVC.swift */,
+				F4022C592294230C00DD3A52 /* StoreDetailVC.swift */,
+				F4022C5722941EB400DD3A52 /* StoreCollectionViewCell.swift */,
+			);
+			path = hotPlace;
+			sourceTree = "<group>";
+		};
+		F4022C5222941B8600DD3A52 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				F4022C5322941C2600DD3A52 /* SettingVC.swift */,
+				F4022C5B22966B4A00DD3A52 /* SettingCell.swift */,
+				F4022C5F22966C6E00DD3A52 /* Setting.swift */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		F4022C6F2296A07300DD3A52 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				F4022C702296A0B600DD3A52 /* Weather.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
 		F4FDE4DD227C2A5F00ECCE9C = {
 			isa = PBXGroup;
 			children = (
@@ -62,14 +145,16 @@
 		F4FDE4E8227C2A5F00ECCE9C /* project_softwarestudio_anjunayo */ = {
 			isa = PBXGroup;
 			children = (
-				F4FDE4E9227C2A5F00ECCE9C /* AppDelegate.swift */,
-				F4FDE4EB227C2A5F00ECCE9C /* ViewController.swift */,
 				F4FDE4ED227C2A5F00ECCE9C /* Main.storyboard */,
-				F4DA39EC22818561001CC984 /* StoreCell.swift */,
-				F4DA39EA228181E5001CC984 /* Store.swift */,
-				F4DA39E822818115001CC984 /* StoreListVC.swift */,
-				F4FDE4F3227C2A6100ECCE9C /* Assets.xcassets */,
+				F4022C6F2296A07300DD3A52 /* api */,
+				F4022C4C2294195900DD3A52 /* GZLog.swift */,
+				F4022C5022941B4700DD3A52 /* weatherRecommend */,
+				F4022C5122941B7300DD3A52 /* hotPlace */,
+				F4FDE4E9227C2A5F00ECCE9C /* AppDelegate.swift */,
+				F4022C49229416F100DD3A52 /* roulette */,
+				F4022C5222941B8600DD3A52 /* setting */,
 				F4FDE4F5227C2A6100ECCE9C /* LaunchScreen.storyboard */,
+				F4FDE4F3227C2A6100ECCE9C /* Assets.xcassets */,
 				F4FDE4F8227C2A6100ECCE9C /* Info.plist */,
 				F4FDE4F0227C2A5F00ECCE9C /* project_softwarestudio_anjunayo.xcdatamodeld */,
 			);
@@ -135,8 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4FDE4F7227C2A6100ECCE9C /* LaunchScreen.storyboard in Resources */,
+				F4022C622296819F00DD3A52 /* weather_sample.png in Resources */,
 				F4FDE4F4227C2A6100ECCE9C /* Assets.xcassets in Resources */,
+				F4022C6E229693EA00DD3A52 /* sf1.png in Resources */,
 				F4FDE4EF227C2A5F00ECCE9C /* Main.storyboard in Resources */,
+				F4022C4F229419EC00DD3A52 /* roulette_fin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,12 +235,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4022C48229416EA00DD3A52 /* RouletteVC.swift in Sources */,
+				F4022C712296A0B600DD3A52 /* Weather.swift in Sources */,
+				F4022C5622941E8400DD3A52 /* StoreCollectionVC.swift in Sources */,
+				F4022C68229690CE00DD3A52 /* RecommendData.swift in Sources */,
+				F4022C4D2294195900DD3A52 /* GZLog.swift in Sources */,
 				F4DA39EB228181E5001CC984 /* Store.swift in Sources */,
-				F4FDE4EC227C2A5F00ECCE9C /* ViewController.swift in Sources */,
+				F4022C752297DDF600DD3A52 /* WeatherTableViewCell.swift in Sources */,
+				F4022C5C22966B4A00DD3A52 /* SettingCell.swift in Sources */,
+				F4022C6422968E9C00DD3A52 /* RecommendCollectionViewCell.swift in Sources */,
+				F4022C6022966C6E00DD3A52 /* Setting.swift in Sources */,
+				F4022C5822941EB400DD3A52 /* StoreCollectionViewCell.swift in Sources */,
+				F4022C6622968F0C00DD3A52 /* RecommendDetailVC.swift in Sources */,
+				F4022C5A2294230C00DD3A52 /* StoreDetailVC.swift in Sources */,
+				F4FDE4EC227C2A5F00ECCE9C /* RecommendVC.swift in Sources */,
 				F4FDE4EA227C2A5F00ECCE9C /* AppDelegate.swift in Sources */,
-				F4DA39E922818115001CC984 /* StoreListVC.swift in Sources */,
+				F4022C4B2294173700DD3A52 /* RouletteView.swift in Sources */,
+				F4022C5422941C2600DD3A52 /* SettingVC.swift in Sources */,
 				F4FDE4F2227C2A5F00ECCE9C /* project_softwarestudio_anjunayo.xcdatamodeld in Sources */,
-				F4DA39ED22818561001CC984 /* StoreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
