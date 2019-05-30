@@ -130,7 +130,7 @@
                                         <connections>
                                             <outlet property="currentTempLabel" destination="PRw-gr-5kO" id="4Yq-5z-6Kc"/>
                                             <outlet property="minMaxLable" destination="3Eb-Ss-PpV" id="SQW-3b-7fh"/>
-                                            <outlet property="statusLabel" destination="3Eb-Ss-PpV" id="gE3-Qg-q2u"/>
+                                            <outlet property="statusLabel" destination="NSB-Cz-mpM" id="YBV-fA-TgE"/>
                                             <outlet property="weatherImgView" destination="W2f-TW-6zG" id="o1W-ke-fuR"/>
                                         </connections>
                                     </tableViewCell>

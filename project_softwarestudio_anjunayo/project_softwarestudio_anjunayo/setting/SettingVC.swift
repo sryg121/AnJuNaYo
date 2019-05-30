@@ -43,7 +43,7 @@ class SettingVC: UIViewController, UITableViewDataSource {
         let image = UIImage(named: "logosample")
         imageView.image = image
         navigationItem.titleView = imageView
-
+        
         // Do any additional setup after loading the view.
     }
 

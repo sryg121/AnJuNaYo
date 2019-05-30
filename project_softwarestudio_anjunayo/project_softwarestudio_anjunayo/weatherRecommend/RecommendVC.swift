@@ -31,6 +31,12 @@ class RecommendVC: UIViewController {
         imageView.image = image
         navigationItem.titleView = imageView
         
+        // 날씨 데이터 나타내기
+        WeatherDatasource.shared.fetchSummary(lat: 37.498206, lon: 127.02761) {
+            [weak self] in
+            self?.weatherView.reloadData()
+        }
+        
     }
 }
 extension RecommendVC: UICollectionViewDataSource {

@@ -10,11 +10,10 @@ import UIKit
 
 class WeatherTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var statusLabel: UILabel!
     static let identifier = "WeatherTableViewCell"
     
     @IBOutlet weak var weatherImgView: UIImageView!
-    
-    @IBOutlet weak var statusLabel: UILabel!
     
     @IBOutlet weak var minMaxLable: UILabel!
     
