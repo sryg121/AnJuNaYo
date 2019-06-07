@@ -15,11 +15,9 @@ struct Store{
     
     var storeImg: UIImage?
     var storeName: String
-    var storeInfo: String
     
-    init(storeName: String, name: String, info: String){
+    init(storeName: String, name: String){
         self.storeImg = UIImage(named: storeName)
         self.storeName = name
-        self.storeInfo = info
     }
 }
