@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BA3E06322B3A30F00A30A3B /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA3E06222B3A30F00A30A3B /* InfoVC.swift */; };
 		F4022C48229416EA00DD3A52 /* RouletteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C47229416EA00DD3A52 /* RouletteVC.swift */; };
 		F4022C4B2294173700DD3A52 /* RouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C4A2294173700DD3A52 /* RouletteView.swift */; };
 		F4022C4D2294195900DD3A52 /* GZLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C4C2294195900DD3A52 /* GZLog.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7BA3E06222B3A30F00A30A3B /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		F4022C47229416EA00DD3A52 /* RouletteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteVC.swift; sourceTree = "<group>"; };
 		F4022C4A2294173700DD3A52 /* RouletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteView.swift; sourceTree = "<group>"; };
 		F4022C4C2294195900DD3A52 /* GZLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GZLog.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				F4022C5322941C2600DD3A52 /* SettingVC.swift */,
 				F4022C5B22966B4A00DD3A52 /* SettingCell.swift */,
 				F4022C5F22966C6E00DD3A52 /* Setting.swift */,
+				7BA3E06222B3A30F00A30A3B /* InfoVC.swift */,
 			);
 			path = setting;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				F4022C48229416EA00DD3A52 /* RouletteVC.swift in Sources */,
 				F4022C712296A0B600DD3A52 /* Weather.swift in Sources */,
 				F4022C5622941E8400DD3A52 /* StoreCollectionVC.swift in Sources */,
+				7BA3E06322B3A30F00A30A3B /* InfoVC.swift in Sources */,
 				F4022C68229690CE00DD3A52 /* RecommendData.swift in Sources */,
 				F4022C4D2294195900DD3A52 /* GZLog.swift in Sources */,
 				F4DA39EB228181E5001CC984 /* Store.swift in Sources */,

@@ -37,6 +37,7 @@ class SettingVC: UIViewController, UITableViewDataSource {
         
         setSettingData()
         settingView.dataSource = self
+        settingView.delegate = self
 
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         imageView.contentMode = .scaleAspectFit
@@ -47,6 +48,15 @@ class SettingVC: UIViewController, UITableViewDataSource {
         // Do any additional setup after loading the view.
     }
 
+}
+
+extension SettingVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 2 {
+            let ivc = storyboard?.instantiateViewController(withIdentifier: "InfoVC") as! InfoVC
+            navigationController?.pushViewController(ivc, animated: true)
+        }
+    }
 }
 
 
