@@ -479,7 +479,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jw9-i4-XKe">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="343" width="375" height="275"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4zi-KP-6LV">
                                     <size key="itemSize" width="203" height="221"/>
@@ -501,8 +501,8 @@
                                                         <constraint firstAttribute="width" secondItem="Dfq-xZ-My3" secondAttribute="height" multiplier="1:1" id="3PY-T1-zc4"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ild-pq-8kc">
-                                                    <rect key="frame" x="20" y="0.0" width="305" height="90"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ild-pq-8kc">
+                                                    <rect key="frame" x="20" y="0.0" width="305" height="325"/>
                                                     <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -528,18 +528,91 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapImage" translatesAutoresizingMaskIntoConstraints="NO" id="rdT-gI-Vk7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="244"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cck-Ks-0WN">
+                                <rect key="frame" x="50" y="82" width="80" height="101"/>
+                                <state key="normal" title="도선동버튼">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="storeLoc4:" destination="gSg-hv-ORt" eventType="touchUpInside" id="kmk-hH-4np"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEu-vV-z9F">
+                                <rect key="frame" x="210" y="74" width="85" height="99"/>
+                                <state key="normal" title="사근동버튼">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="storeLoc3:" destination="gSg-hv-ORt" eventType="touchUpInside" id="UYc-50-h68"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYA-dV-yoG">
+                                <rect key="frame" x="160" y="159" width="45" height="30"/>
+                                <state key="normal" title="6번출구버튼">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="storeLoc1:" destination="gSg-hv-ORt" eventType="touchUpInside" id="v19-uJ-eeU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDN-a8-rOs">
+                                <rect key="frame" x="165" y="189" width="39" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="StZ-52-ca7"/>
+                                </constraints>
+                                <state key="normal" title="한양시장버튼">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="storeLoc2:" destination="gSg-hv-ORt" eventType="touchUpInside" id="iRH-mi-gzR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="              " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKX-Ez-z7O">
+                                <rect key="frame" x="72" y="314" width="231" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="cck-Ks-0WN" firstAttribute="leading" relation="lessThanOrEqual" secondItem="iWd-r4-JYz" secondAttribute="leading" constant="50" id="3CR-Pk-YpA"/>
                             <constraint firstItem="jw9-i4-XKe" firstAttribute="leading" secondItem="iWd-r4-JYz" secondAttribute="leading" id="3hS-Hb-r1X"/>
+                            <constraint firstItem="iWd-r4-JYz" firstAttribute="trailing" secondItem="rdT-gI-Vk7" secondAttribute="trailing" id="41t-6J-E9Y"/>
+                            <constraint firstItem="jw9-i4-XKe" firstAttribute="top" secondItem="yEu-vV-z9F" secondAttribute="bottom" constant="170" id="5zY-b5-5JZ"/>
+                            <constraint firstItem="iWd-r4-JYz" firstAttribute="bottom" secondItem="rdT-gI-Vk7" secondAttribute="bottom" constant="310" id="9Qg-2F-C7S"/>
                             <constraint firstItem="iWd-r4-JYz" firstAttribute="bottom" secondItem="jw9-i4-XKe" secondAttribute="bottom" id="AWe-nZ-wpP"/>
                             <constraint firstItem="iWd-r4-JYz" firstAttribute="trailing" secondItem="jw9-i4-XKe" secondAttribute="trailing" id="E5I-k2-RpQ"/>
-                            <constraint firstItem="jw9-i4-XKe" firstAttribute="top" secondItem="iWd-r4-JYz" secondAttribute="top" id="ZRD-8d-czx"/>
+                            <constraint firstItem="CKX-Ez-z7O" firstAttribute="leading" secondItem="iWd-r4-JYz" secondAttribute="leading" constant="72" id="MRh-ud-aCn"/>
+                            <constraint firstItem="jw9-i4-XKe" firstAttribute="top" secondItem="CKX-Ez-z7O" secondAttribute="bottom" constant="8" id="TAH-80-uFO"/>
+                            <constraint firstItem="jw9-i4-XKe" firstAttribute="top" secondItem="rdT-gI-Vk7" secondAttribute="bottom" constant="35" id="ThT-fU-J4n"/>
+                            <constraint firstItem="rdT-gI-Vk7" firstAttribute="top" secondItem="iWd-r4-JYz" secondAttribute="top" id="WWk-7l-fGd"/>
+                            <constraint firstItem="jw9-i4-XKe" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iWd-r4-JYz" secondAttribute="top" constant="250" id="ZRD-8d-czx"/>
+                            <constraint firstItem="rDN-a8-rOs" firstAttribute="top" secondItem="XYA-dV-yoG" secondAttribute="bottom" id="Zey-Ce-tmn"/>
+                            <constraint firstItem="rdT-gI-Vk7" firstAttribute="leading" secondItem="iWd-r4-JYz" secondAttribute="leading" id="bgJ-nP-IBK"/>
+                            <constraint firstItem="yEu-vV-z9F" firstAttribute="leading" relation="lessThanOrEqual" secondItem="XYA-dV-yoG" secondAttribute="trailing" priority="750" constant="5" id="ccd-Vc-VK0"/>
+                            <constraint firstItem="CKX-Ez-z7O" firstAttribute="top" secondItem="rdT-gI-Vk7" secondAttribute="bottom" constant="6" id="fsc-x7-ApU"/>
+                            <constraint firstItem="jw9-i4-XKe" firstAttribute="top" secondItem="rDN-a8-rOs" secondAttribute="bottom" constant="109" id="iNd-Tl-HqT"/>
+                            <constraint firstItem="XYA-dV-yoG" firstAttribute="leading" relation="lessThanOrEqual" secondItem="cck-Ks-0WN" secondAttribute="trailing" priority="750" constant="30" id="l6D-kj-WEw"/>
+                            <constraint firstItem="iWd-r4-JYz" firstAttribute="trailing" secondItem="rDN-a8-rOs" secondAttribute="trailing" constant="171" id="lAr-6k-qu0"/>
+                            <constraint firstItem="XYA-dV-yoG" firstAttribute="leading" secondItem="iWd-r4-JYz" secondAttribute="leading" constant="160" id="lrc-fX-1Hj"/>
+                            <constraint firstItem="iWd-r4-JYz" firstAttribute="trailing" secondItem="CKX-Ez-z7O" secondAttribute="trailing" constant="72" id="oSO-SV-vve"/>
+                            <constraint firstItem="iWd-r4-JYz" firstAttribute="trailing" secondItem="XYA-dV-yoG" secondAttribute="trailing" constant="170" id="pfM-eW-GJC"/>
+                            <constraint firstItem="jw9-i4-XKe" firstAttribute="top" secondItem="cck-Ks-0WN" secondAttribute="bottom" constant="160" id="qHX-fz-eRw"/>
+                            <constraint firstItem="iWd-r4-JYz" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="yEu-vV-z9F" secondAttribute="trailing" constant="80" id="qyX-HP-Pu5"/>
+                            <constraint firstItem="rDN-a8-rOs" firstAttribute="leading" secondItem="iWd-r4-JYz" secondAttribute="leading" constant="165" id="rr8-T5-rib"/>
+                            <constraint firstItem="yEu-vV-z9F" firstAttribute="top" secondItem="iWd-r4-JYz" secondAttribute="top" constant="10" id="tBP-0E-l4A"/>
+                            <constraint firstItem="XYA-dV-yoG" firstAttribute="top" secondItem="iWd-r4-JYz" secondAttribute="top" constant="95" id="yUj-x0-QHn"/>
+                            <constraint firstItem="cck-Ks-0WN" firstAttribute="top" secondItem="iWd-r4-JYz" secondAttribute="top" constant="18" id="zvZ-1h-aJa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iWd-r4-JYz"/>
                     </view>
                     <navigationItem key="navigationItem" title="핫플레이스" id="3xD-sD-PgZ"/>
                     <connections>
+                        <outlet property="locLabel" destination="CKX-Ez-z7O" id="do8-W0-IF1"/>
                         <outlet property="storeCollection" destination="jw9-i4-XKe" id="hVJ-mg-pW0"/>
                     </connections>
                 </viewController>

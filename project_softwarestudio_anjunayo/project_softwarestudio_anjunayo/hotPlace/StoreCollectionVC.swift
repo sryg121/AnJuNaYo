@@ -9,14 +9,47 @@
 import UIKit
 
 class StoreCollectionVC: UIViewController {
-
+    
     @IBOutlet weak var storeCollection: UICollectionView!
+    
+    //클릭한 위치 표시
+    @IBOutlet var locLabel: UILabel!
+    
+    //왕십리역 6번 출구
+    @IBAction func storeLoc1(_ sender: Any) {
+        locClickButton = 1
+        locLabel.text = "왕십리역 6번 출구"
+        storeCollection.reloadData()
+    }
+    
+    //한양시장
+    @IBAction func storeLoc2(_ sender: Any) {
+        locClickButton = 2
+        locLabel.text = "한양시장"
+        storeCollection.reloadData()
+    }
+    
+    //사근동
+    @IBAction func storeLoc3(_ sender: Any) {
+        locClickButton = 3
+        locLabel.text = "사근동"
+        storeCollection.reloadData()
+    }
+    
+    //도선동
+    @IBAction func storeLoc4(_ sender: Any) {
+        locClickButton = 4
+        locLabel.text = "도선동"
+        storeCollection.reloadData()
+    }
     
     var storeList:[Store] = []
     var storeWangsimni:[Store] = []
     var storeHanyangMarket:[Store] = []
     var storeSageun:[Store] = []
     var storeDosun:[Store] = []
+    
+    var locClickButton: Int = 0
     
     
     override func viewDidLoad() {
@@ -73,14 +106,44 @@ extension StoreCollectionVC: UICollectionViewDataSource {
     // 현재는 musicList 배열의 count 갯수 만큼 반환합니다.
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return storeList.count
+        switch locClickButton {
+        case 0:
+            return storeList.count
+        case 1:
+            return storeWangsimni.count
+        case 2:
+            return storeHanyangMarket.count
+        case 3:
+            return storeSageun.count
+        case 4:
+            return storeDosun.count
+        default:
+            return storeList.count
+        }
+        
+        
     }
     
     // 각 index 에 해당하는 셀에 데이터를 주입합니다.
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoreCollectionViewCell", for: indexPath) as! StoreCollectionViewCell
         
-        let store = storeList[indexPath.row]
+        var store = storeList[indexPath.row]
+        
+        switch locClickButton {
+        case 0:
+            store = storeList[indexPath.row]
+        case 1:
+            store = storeWangsimni[indexPath.row]
+        case 2:
+            store = storeHanyangMarket[indexPath.row]
+        case 3:
+            store = storeSageun[indexPath.row]
+        case 4:
+            store = storeDosun[indexPath.row]
+        default:
+            store = storeList[indexPath.row]
+        }
         
         cell.storeImg.image = store.storeImg
         cell.storeInfo.text = store.storeName
@@ -98,7 +161,22 @@ extension StoreCollectionVC: UICollectionViewDelegate {
         
         let dvc = storyboard?.instantiateViewController(withIdentifier: "StoreDetailVC") as! StoreDetailVC
         
-        let store = storeList[indexPath.row]
+        var store = storeList[indexPath.row]
+        
+        switch locClickButton {
+        case 0:
+            store = storeList[indexPath.row]
+        case 1:
+            store = storeWangsimni[indexPath.row]
+        case 2:
+            store = storeHanyangMarket[indexPath.row]
+        case 3:
+            store = storeSageun[indexPath.row]
+        case 4:
+            store = storeDosun[indexPath.row]
+        default:
+            store = storeList[indexPath.row]
+        }
         
         dvc.storeImg = store.storeImg
         dvc.storeName = store.storeName
@@ -168,6 +246,8 @@ extension StoreCollectionVC{
         let naGune = Store(storeName:"naGuNe", name: "나그네파전", info: "동동주와 파전이 맛있는, 비가 오면 떠오르는 곳")
         let ggoZiPub = Store(storeName: "ggoZiPub", name: "꼬지펍", info: "직화구이 꼬치가 맛있는 왕십리 술집")
         
+        
+        
         //storeList03 : 사근동
         let hoChicken = Store(storeName: "hoChicken", name: "호치킨", info: "저렴하게 맛보는 바삭한 크리스피 치킨")
         let boGoSipDa = Store(storeName: "boGoSipDa", name: "지금, 보고싶다", info: "밤은 짙고 술은 차고 지금, 보고싶다..국내 최초 갤러리전 감성주점")
@@ -177,26 +257,30 @@ extension StoreCollectionVC{
         let siKi = Store(storeName: "siKi", name: "시키", info: "부담 없이 사케와 일본식 안주를 즐길 수 있는 곳")
         let spicyDakBal = Store(storeName: "spicyDakbal", name: "한양대신닭발", info: "한양대 대표 닭발집")
         
+        
+        
         //storeList04 : 도선동
         let ddangKo = Store(storeName: "ddangKo", name: "땅코참숯구이", info: "성동구 no.1 고기집")
         let gulAndZimLove = Store(storeName: "gulAndZimLove", name: "굴과 찜사랑", info: "해물 덕후들은 모여라! 생방송투데이에도 나온 해물찜 전문점")
         let lifeBeer = Store(storeName: "lifeBeer", name: "생활맥주", info: "집가는 길에 가볍게 맥주 한 잔 어때요?")
         let matNa = Store(storeName: "matNa", name: "맛나곱창", info: "왕십리 곱창골목 중에서도 유명한 곱창집")
         let yeopGi = Store(storeName: "yeopGi", name: "엽기꼼닭발", info: "수요미식회에도 나온 닭발과 꼼장어 맛집")
-
         
-/*test : collection view 에 해당 내용이 잘 들어가는지 테스트
-        let store1 = Store(storeName: "그림1", name: "조명창고", info: "카시스소다가 정말 맛있어요!")
-        let store2 = Store(storeName: "store2", name: "한신포차", info: "닭발에 소주가 최고에요")
-        let store3 = Store(storeName: "store3", name: "낙원스낵", info: "날씨 좋을 때는 피맥이죠")
-        let store4 = Store(storeName: "store4", name: "백번", info: "한양대 술집하면 백번")
-        let store5 = Store(storeName: "store5", name: "한양대신닭발", info: "닭발에 소주가 짱이에요")
-        let store6 = Store(storeName: "store6", name: "일번지", info: "일번지는 칵테일 소주")
-        let store7 = Store(storeName: "store7", name: "종로빈대떡", info: "빈대떡에 막걸리 한잔")
-        let store8 = Store(storeName: "store8", name: "곱창하우스", info: "곱쏘 곱쏘")
-        let store9 = Store(storeName: "store9", name: "김부삼", info: "삼겹살에는 소맥 한잔")
-        let store10 = Store(storeName: "store10", name: "노란통닭", info: "언제나 최고인 치맥")
-        */
+        
+        
+        
+        /*test : collection view 에 해당 내용이 잘 들어가는지 테스트
+         let store1 = Store(storeName: "그림1", name: "조명창고", info: "카시스소다가 정말 맛있어요!")
+         let store2 = Store(storeName: "store2", name: "한신포차", info: "닭발에 소주가 최고에요")
+         let store3 = Store(storeName: "store3", name: "낙원스낵", info: "날씨 좋을 때는 피맥이죠")
+         let store4 = Store(storeName: "store4", name: "백번", info: "한양대 술집하면 백번")
+         let store5 = Store(storeName: "store5", name: "한양대신닭발", info: "닭발에 소주가 짱이에요")
+         let store6 = Store(storeName: "store6", name: "일번지", info: "일번지는 칵테일 소주")
+         let store7 = Store(storeName: "store7", name: "종로빈대떡", info: "빈대떡에 막걸리 한잔")
+         let store8 = Store(storeName: "store8", name: "곱창하우스", info: "곱쏘 곱쏘")
+         let store9 = Store(storeName: "store9", name: "김부삼", info: "삼겹살에는 소맥 한잔")
+         let store10 = Store(storeName: "store10", name: "노란통닭", info: "언제나 최고인 치맥")
+         */
         
         //test code: storeList 제대로 들어가는 확인용
         
@@ -208,3 +292,4 @@ extension StoreCollectionVC{
         storeList = storeHanyangMarket
     }
 }
+
