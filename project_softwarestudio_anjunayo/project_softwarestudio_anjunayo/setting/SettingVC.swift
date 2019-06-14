@@ -63,13 +63,18 @@ class SettingVC: UIViewController, UITableViewDataSource {
 
 extension SettingVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 2 {
+        if indexPath.row == 0 {
+            let pvc = storyboard?.instantiateViewController(withIdentifier: "PrivacyVC") as! PrivacyVC
+            navigationController?.pushViewController(pvc, animated: true)
+        } else if indexPath.row == 2 {
             let ivc = storyboard?.instantiateViewController(withIdentifier: "InfoVC") as! InfoVC
             navigationController?.pushViewController(ivc, animated: true)
-        }
-        if indexPath.row == 3 {
+        } else if indexPath.row == 3 {
             let tvc = storyboard?.instantiateViewController(withIdentifier: "TermVC") as! TermVC
             navigationController?.pushViewController(tvc, animated: true)
+        } else {
+            let avc = storyboard?.instantiateViewController(withIdentifier: "AnnounceVC") as! AnnounceVC
+            navigationController?.pushViewController(avc, animated: true)
         }
     }
 }
@@ -79,7 +84,7 @@ extension SettingVC{
     
     func setSettingData(){
         
-        let setting1 = Setting(item: "개인/보안")
+        let setting1 = Setting(item: "고객지원 및 보안")
         let setting2 = Setting(item: "공지사항")
         let setting3 = Setting(item: "앱 정보")
         let setting4 = Setting(item: "약관 및 정책")

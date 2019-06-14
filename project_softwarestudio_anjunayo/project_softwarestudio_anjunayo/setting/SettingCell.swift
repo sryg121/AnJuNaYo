@@ -12,6 +12,7 @@ class SettingCell: UITableViewCell {
 
     @IBOutlet weak var settingItemLabel: UILabel!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

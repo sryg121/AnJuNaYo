@@ -46,6 +46,7 @@ extension RecommendDetailVC: UICollectionViewDataSource {
     
     
 }
+
 extension RecommendDetailVC: UICollectionViewDelegateFlowLayout {
     
     // Collection View Cell 의 windth, height 를 지정할 수 있습니다.

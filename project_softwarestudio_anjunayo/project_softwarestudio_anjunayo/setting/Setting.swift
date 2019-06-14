@@ -18,3 +18,15 @@ struct Setting{
     
     }
 }
+
+struct Announce {
+    var items: String?
+    var dates: String?
+    
+    init (item: String){
+        
+        self.items = item
+        self.dates = "19/06/14"
+        
+    }
+}
