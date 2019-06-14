@@ -16,6 +16,7 @@ class RecommendDetailViewCell: UICollectionViewCell {
     
     @IBOutlet weak var detailInfo: UILabel!
     
+    
     override func awakeFromNib() {
         detailImage.layer.cornerRadius = 10
         detailImage.layer.masksToBounds = true

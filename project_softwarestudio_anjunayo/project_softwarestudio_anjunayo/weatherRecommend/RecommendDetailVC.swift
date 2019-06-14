@@ -41,10 +41,29 @@ extension RecommendDetailVC: UICollectionViewDataSource {
         cell.detailLabel.text = store.storeName
         cell.detailInfo.text = store.storeInfo
         
+        
         return cell
     }
     
     
+}
+
+extension RecommendDetailVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let dvc = storyboard?.instantiateViewController(withIdentifier: "StoreDetailVC") as! StoreDetailVC
+        
+        let data = menuDetailList[indexPath.row]
+        
+        dvc.storeAddress = "주소: " + data.storeAddress
+        dvc.storeImg = data.storeImg
+        dvc.storeInfo = "'" + data.storeInfo + "'"
+        dvc.storeName = "<" + data.storeName + ">"
+        dvc.storeMenu = "☺︎ " + data.storeMenu
+
+        navigationController?.pushViewController(dvc, animated: true)
+        
+    }
 }
 
 extension RecommendDetailVC: UICollectionViewDelegateFlowLayout {

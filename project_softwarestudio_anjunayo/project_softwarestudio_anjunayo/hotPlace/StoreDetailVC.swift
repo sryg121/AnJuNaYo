@@ -33,14 +33,13 @@ class StoreDetailVC: UIViewController {
         setStoreImgView()
         setFont()
 
-        // Do any additional setup after loading the view.
     }
     
     // font 설정하는 함수
     func setFont(){
         self.storeNameLabel.font = UIFont(name: "NanumSquareOTFR", size: 20)
     }
-    
+
     func setContents(){
         storeImgView.image = storeImg
         storeInfoLabel.text = storeInfo
@@ -53,15 +52,5 @@ class StoreDetailVC: UIViewController {
         storeImgView.layer.cornerRadius = 5
         storeImgView.layer.masksToBounds = true
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
