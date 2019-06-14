@@ -97,11 +97,11 @@
 		F4022C5022941B4700DD3A52 /* weatherRecommend */ = {
 			isa = PBXGroup;
 			children = (
+				F4022C742297DDF600DD3A52 /* WeatherTableViewCell.swift */,
 				F4FDE4EB227C2A5F00ECCE9C /* RecommendVC.swift */,
 				F4022C6322968E9C00DD3A52 /* RecommendCollectionViewCell.swift */,
-				F4022C6522968F0C00DD3A52 /* RecommendDetailVC.swift */,
 				F4022C67229690CE00DD3A52 /* RecommendData.swift */,
-				F4022C742297DDF600DD3A52 /* WeatherTableViewCell.swift */,
+				F4022C6522968F0C00DD3A52 /* RecommendDetailVC.swift */,
 				F4DC2C0822B24F69000A42EF /* RecommendDetailViewCell.swift */,
 			);
 			path = weatherRecommend;

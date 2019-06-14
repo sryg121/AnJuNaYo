@@ -38,13 +38,45 @@ class RecommendVC: UIViewController {
     // 오류 테스트하기 위한 array
     var recommendRand: [Recommend] = []
     
-    
+    // 초기 array
+    var store: [Store] = []
+    //recommend1:
+    var storePork: [Store] = []
+    //recommend2:
+    var storeChicken: [Store] = []
+    //recommend3:
+    var storeJeon: [Store] = []
+    //recommend4:
+    var storeCocktail: [Store] = []
+    //recommend5:
+    var storeChinese: [Store] = []
+    //recommend6:
+    var storeYookhwae: [Store] = []
+    //recommend7:
+    var storeGob:[Store] = []
+    //recommend8:
+    var storeFrenchfry: [Store] = []
+    //recommend9:
+    var storeTang: [Store] = []
+    //recommend10:
+    var storeDakbal: [Store] = []
+    //recommend11:
+    var storeIzakaya: [Store] = []
+    //recommend12:
+    var storeGgochi: [Store] = []
+    //recommend13:
+    var storeDry: [Store] = []
+    //recommend14:
+    var storeSeafood: [Store] = []
+    //recommend15:
+    var storePizza: [Store] = []
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
         setRecommendData()
+        setStoreData()
         
         recommendView.dataSource = self
         recommendView.delegate = self
@@ -117,9 +149,6 @@ extension RecommendVC: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: WeatherTableViewCell.identifier) as! WeatherTableViewCell
         
         if let data = WeatherDataSource.shared.summary?.weather.minutely.first {
-            
-            
-            //recommendList = recommendSunny2
             
             if data.sky.name == "맑음" {
                 
@@ -237,43 +266,6 @@ extension RecommendVC: UICollectionViewDataSource {
     }
 }
 
-// 여기서 이제 recommendView에 나타나는 각 cell 에 해당하는 음식점 리스트를
-// RecommendDetailVC에서 collection view에 나타내고 싶은데 어떻게 연결해줘야할지 모르겠습니다.
-// 아래는 각 cell을 클릭시 나타낼 음식점 리스트입니다.
-/*
- // 추천해준 안주에 해당하는 음식점 리스트 알려주기
- //recommend1:
- menuDetailList = [jeJu, ddangKo]
- //recommend2:
- menuDetailList = [hoChicken, hanSin, againChicken, lifeBeer]
- //recommend3:
- menuDetailList = [dongChon, naGune]
- //recommend4:
- menudDetailList = [bucketList, lightHouse, moonBar,boGoSipDa]
- //recommend5:
- menuDetailList = [goldenDragon, giRi, manLi]
- //recommend6:
- menuDetailList = [yukSha]
- //recommend7:
- menuDetailList = [gobStory, matNa]
- //recommend8:
- menuDetailList = [pomFrites, lifeBeer]
- //recommend9:
- menuDetailList = [jinGook, gaengSaeng, hanSin, boGoSipDa, yukSha]
- //recommend10:
- menuDetailList = [spicyDakBal, yeopGi, hanSin]
- //recommend11:
- menuDetailList = [cloudRain, kyeongSeong, siKi]
- //recommend12:
- menuDetailList = [dieCoZi, manLi, ggoZiPub]
- //recommend13:
- menuDetailList = [noGaRi, hoDoRi]
- //recommend14:
- menuDetailList = [hChong, meJong, gulAndZimLove]
- //recommend15:
- menuDetailList = [eightFT, nakWon]
- */
-
 extension RecommendVC: UICollectionViewDelegate {
     
     /*
@@ -284,10 +276,44 @@ extension RecommendVC: UICollectionViewDelegate {
         
         let dvc = storyboard?.instantiateViewController(withIdentifier: "RecommendDetailVC") as! RecommendDetailVC
         
-        // 선택된 데이터를 다음 뷰 컨트롤러에 주입
+        // 선택된 데이터를 다음 뷰 컨트롤러(RecommendDetailVC) 에 주입
         let selectedRecommend = recommendList[indexPath.item]
-        //dvc.selectedRecommendTitle = selectedRecommend.title
+        
         //cell에 있는 데이터들을 여기에 만들어놓은 데이터들로 호출하도록
+        if selectedRecommend.recommendTitle == "삼겹살 + 소주" {
+            dvc.menuDetailList = storePork
+        } else if selectedRecommend.recommendTitle == "치킨 + 맥주" {
+            dvc.menuDetailList = storeChicken
+        } else if selectedRecommend.recommendTitle == "김치전 해물파전"{
+            dvc.menuDetailList = storeJeon
+        } else if selectedRecommend.recommendTitle == "파스타 감바스 + 칵테일" {
+            dvc.menuDetailList = storeCocktail
+        } else if selectedRecommend.recommendTitle == "중국요리" {
+            dvc.menuDetailList = storeChinese
+        } else if selectedRecommend.recommendTitle == "육회" {
+            dvc.menuDetailList = storeYookhwae
+        } else if selectedRecommend.recommendTitle == "곱창 + 소주" {
+            dvc.menuDetailList = storeGob
+        } else if selectedRecommend.recommendTitle == "감자튀김 + 맥주" {
+            dvc.menuDetailList = storeFrenchfry
+        } else if selectedRecommend.recommendTitle == "탕류" {
+            dvc.menuDetailList = storeTang
+        } else if selectedRecommend.recommendTitle == "닭발 + 소주" {
+            dvc.menuDetailList = storeDakbal
+        } else if selectedRecommend.recommendTitle == "이자카야" {
+            dvc.menuDetailList = storeIzakaya
+        } else if selectedRecommend.recommendTitle == "꼬치" {
+            dvc.menuDetailList = storeGgochi
+        } else if selectedRecommend.recommendTitle == "마른안주" {
+            dvc.menuDetailList = storeDry
+        } else if selectedRecommend.recommendTitle == "해물요리" {
+            dvc.menuDetailList = storeSeafood
+        } else if selectedRecommend.recommendTitle == "피자 + 맥주" {
+            dvc.menuDetailList = storePizza
+        } else { // test code: 데이터가 아무것도 안들어가는 경우 테스트 위한 예외코드
+            dvc.menuDetailList = store
+        }
+        
         print("selected ", selectedRecommend.recommendTitle)
         navigationController?.pushViewController(dvc, animated: true)
         
@@ -296,6 +322,7 @@ extension RecommendVC: UICollectionViewDelegate {
 
 extension RecommendVC{
 
+    //안주조합 추천 메소드
     func setRecommendData(){
         
         // 안주 종류들
@@ -340,4 +367,58 @@ extension RecommendVC{
         
     }
     
+    //조합 별 음식점 설정 메소드
+    func setStoreData(){
+        
+        // 음식점 종류
+        let yukSha = Store(storeName:"yukSha", name: "육앤샤", info: "육회와 샤브샤브의 조화")
+        let eightFt = Store(storeName:"eightFt", name: "8피트", info: "시원한 루프탑 바에서 맥주 한 잔")
+        let gaengSaeng = Store(storeName: "gaengSaeng", name: "갱생", info: "교도소 컨셉의 복고 술집")
+        let hanSin = Store(storeName: "hanSin", name: "한신포차", info: "메뉴 성공률 100%")
+        let hChong = Store(storeName:"hChong", name: "회뜨는 총각", info: "한양대가 본점이라는 사실, 알고 계셨나요?")
+        let noGaRi = Store(storeName: "noGaRi", name: "노가리슈퍼", info:  "왕십리 가성비 술집")
+        let meJong = Store(storeName: "meJong", name: "메종드 혁이네", info: "만석일 땐 불이 들어와요")
+        let nakWon = Store(storeName: "nakWon", name: "낙원스낵", info: "간단하게 피맥")
+        let bucketList = Store(storeName: "bucketList", name: "버킷리스트", info: "분위기 좋은 칵테일 바")
+        let dieCoZi = Store(storeName: "dieCoZi", name: "다이꼬지", info: "한양대 인근 이자카야")
+        let cloudRain = Store(storeName: "cloudRain", name: "운우", info: "혼술하기 좋은 곳")
+        let dongChon = Store(storeName: "dongChon", name: "동촌", info: "밤막걸리가 맛있는 곳")
+        let gobStory = Store(storeName: "gobStory", name: "곱창이야기", info: "소곱창과 가래떡의 조합")
+        let goldenDragon = Store(storeName: "goldenDragon", name: "금룡", info: "24시간 중국집, 배달도 됩니다")
+        let hoDoRi = Store(storeName: "hoDoRi", name: "호돌이전파사", info: "인생은 황태를 먹기 전과 후로 나뉜다")
+        let jinGook = Store(storeName: "jinGook", name: "진국", info: "24시간 해장국 맛집")
+        let jeJu = Store(storeName: "jeJu", name: "제주뒷고기", info: "뒷고기 한 점과 한라산의 조화")
+        let kyeongSeong = Store(storeName: "kyeongSeong", name: "경성주막1929", info: "가성비 좋은 퓨전 이자카야")
+        let lightHouse = Store(storeName: "lightHouse", name: "조명창고", info: "소개팅과 데이트, 모임에 적합한 분위기 좋은 술집")
+        let manLi = Store(storeName: "manLi", name: "만리향 양꼬치", info: "한양대 대표 양꼬치 집")
+        let moonBar = Store(storeName: "moonBar", name: "달바", info: "분위기 좋은 곳에서 칵테일 한 잔")
+        let naGune = Store(storeName:"naGuNe", name: "나그네파전", info: "동동주와 파전이 맛있는, 비가 오면 떠오르는 곳")
+        let ggoZiPub = Store(storeName: "ggoZiPub", name: "꼬지펍", info: "직화구이 꼬치가 맛있는 왕십리 술집")
+        let hoChicken = Store(storeName: "hoChicken", name: "호치킨", info: "저렴하게 맛보는 바삭한 크리스피 치킨")
+        let boGoSipDa = Store(storeName: "boGoSipDa", name: "지금, 보고싶다", info: "밤은 짙고 술은 차고 지금, 보고싶다..국내 최초 갤러리전 감성주점")
+        let againChicken = Store(storeName: "againChicken", name: "다시올치킨", info: "닭 요리 전문점")
+        let giRi = Store(storeName: "giRi", name: "길이식당", info: "성동구를 대표하는 마라탕 맛집")
+        let pomFrites = Store(storeName: "pomFrites", name: "폼프리츠", info: "고소고소한 감자튀김과 시원한 맥주")
+        let siKi = Store(storeName: "siKi", name: "시키", info: "부담 없이 사케와 일본식 안주를 즐길 수 있는 곳")
+        let spicyDakBal = Store(storeName: "spicyDakbal", name: "한양대신닭발", info: "한양대 대표 닭발집")
+    
+        
+        //메뉴 별 음식점 list
+        storePork = [jeJu] // ddangKo 가 없어..
+        storeChicken = [hoChicken, hanSin, againChicken] // lifeBeer 가 없어...
+        storeJeon = [dongChon, naGune]
+        storeCocktail = [bucketList, lightHouse, moonBar,boGoSipDa]
+        storeChinese = [goldenDragon, giRi, manLi]
+        storeYookhwae = [yukSha]
+        storeGob = [gobStory] // matNa 가 없어...
+        storeFrenchfry = [pomFrites] // lifeBeer 가 없어..
+        storeTang = [jinGook, gaengSaeng, hanSin, boGoSipDa, yukSha]
+        storeDakbal = [spicyDakBal, hanSin] // yeopGi 가 없어..
+        storeIzakaya = [cloudRain, kyeongSeong, siKi]
+        storeGgochi = [dieCoZi, manLi, ggoZiPub]
+        storeDry = [noGaRi, hoDoRi]
+        storeSeafood = [hChong, meJong] // gulAndZimLove 가 없어..
+        storePizza = [eightFt, nakWon]
+        
+    }
 }

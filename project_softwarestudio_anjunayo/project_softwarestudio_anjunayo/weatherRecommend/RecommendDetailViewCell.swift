@@ -9,8 +9,12 @@
 import UIKit
 
 class RecommendDetailViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var detailImage: UIImageView!
+    
     @IBOutlet weak var detailLabel: UILabel!
+    
+    @IBOutlet weak var detailInfo: UILabel!
     
     override func awakeFromNib() {
         detailImage.layer.cornerRadius = 10

@@ -307,28 +307,54 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecommendDetailViewCell" id="cAw-rx-pyx" customClass="RecommendDetailViewCell" customModule="project_softwarestudio_anjunayo" customModuleProvider="target">
-                                        <rect key="frame" x="37.5" y="0.0" width="300" height="300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="172"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="115" height="172"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dd3-dS-FEw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dd3-dS-FEw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="dd3-dS-FEw" secondAttribute="height" multiplier="1:1" id="s0Z-5I-d0F"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bF9-Fv-Knt">
-                                                    <rect key="frame" x="20" y="20" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bF9-Fv-Knt">
+                                                    <rect key="frame" x="8" y="123" width="99" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="Uij-aV-VOc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="17"/>
                                                     <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gl-Yd-apc">
+                                                    <rect key="frame" x="8" y="147" width="99" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="7vq-It-MyQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <size key="customSize" width="300" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="8Gl-Yd-apc" secondAttribute="bottom" constant="9" id="0uR-UL-pXs"/>
+                                            <constraint firstAttribute="trailing" secondItem="dd3-dS-FEw" secondAttribute="trailing" id="2kb-Pk-PTn"/>
+                                            <constraint firstAttribute="trailing" secondItem="8Gl-Yd-apc" secondAttribute="trailing" constant="8" id="3ve-sO-dfA"/>
+                                            <constraint firstItem="8Gl-Yd-apc" firstAttribute="leading" secondItem="cAw-rx-pyx" secondAttribute="leading" constant="8" id="YAI-OM-YIq"/>
+                                            <constraint firstItem="bF9-Fv-Knt" firstAttribute="top" secondItem="dd3-dS-FEw" secondAttribute="bottom" constant="8" id="Z8P-m9-qcv"/>
+                                            <constraint firstItem="bF9-Fv-Knt" firstAttribute="leading" secondItem="cAw-rx-pyx" secondAttribute="leading" constant="8" id="c6J-w3-zH2"/>
+                                            <constraint firstItem="dd3-dS-FEw" firstAttribute="top" secondItem="cAw-rx-pyx" secondAttribute="top" id="ckv-NA-7Dk"/>
+                                            <constraint firstItem="dd3-dS-FEw" firstAttribute="leading" secondItem="cAw-rx-pyx" secondAttribute="leading" id="f8K-Fj-48J"/>
+                                            <constraint firstAttribute="trailing" secondItem="bF9-Fv-Knt" secondAttribute="trailing" constant="8" id="nPa-OH-JXo"/>
+                                            <constraint firstItem="8Gl-Yd-apc" firstAttribute="top" secondItem="bF9-Fv-Knt" secondAttribute="bottom" constant="4" id="y0j-pF-qKy"/>
+                                        </constraints>
+                                        <size key="customSize" width="115" height="172"/>
                                         <connections>
                                             <outlet property="detailImage" destination="dd3-dS-FEw" id="6OT-9d-ng8"/>
+                                            <outlet property="detailInfo" destination="8Gl-Yd-apc" id="0zn-4d-fsH"/>
                                             <outlet property="detailLabel" destination="bF9-Fv-Knt" id="as9-Ml-KEu"/>
                                         </connections>
                                     </collectionViewCell>
@@ -570,9 +596,9 @@
                                     <action selector="storeLoc2:" destination="gSg-hv-ORt" eventType="touchUpInside" id="iRH-mi-gzR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="              " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKX-Ez-z7O">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어디를 가볼까?   " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKX-Ez-z7O">
                                 <rect key="frame" x="72" y="314" width="231" height="21"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
