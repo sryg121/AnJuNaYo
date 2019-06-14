@@ -44,8 +44,19 @@ class SettingVC: UIViewController, UITableViewDataSource {
         let image = UIImage(named: "logosample")
         imageView.image = image
         navigationItem.titleView = imageView
-        
-        // Do any additional setup after loading the view.
+
+    }
+    
+    /*
+     didSelectRowAt 함수에서 해당 셀을 선택하고 설정 상세정보 뷰로 전환되었다가 다시 돌아오면
+     그 셀이 선택된 상태로 남아 있는 현상을 해결.
+     */
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+
+        if let index = settingView.indexPathForSelectedRow {
+            settingView.deselectRow(at: index, animated: true)
+        }
     }
 
 }
@@ -55,6 +66,10 @@ extension SettingVC: UITableViewDelegate {
         if indexPath.row == 2 {
             let ivc = storyboard?.instantiateViewController(withIdentifier: "InfoVC") as! InfoVC
             navigationController?.pushViewController(ivc, animated: true)
+        }
+        if indexPath.row == 3 {
+            let tvc = storyboard?.instantiateViewController(withIdentifier: "TermVC") as! TermVC
+            navigationController?.pushViewController(tvc, animated: true)
         }
     }
 }

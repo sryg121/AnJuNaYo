@@ -179,8 +179,10 @@ extension StoreCollectionVC: UICollectionViewDelegate {
         }
         
         dvc.storeImg = store.storeImg
-        dvc.storeName = store.storeName
+        dvc.storeName = "<" + store.storeName + ">"
         dvc.storeInfo = store.storeInfo
+        dvc.storeMenu = "☻ " + store.storeMenu
+        dvc.storeAddress = "주소: " + store.storeAddress
         
         navigationController?.pushViewController(dvc, animated: true)
     }
@@ -220,54 +222,47 @@ extension StoreCollectionVC{
     func setStoreData(){
         
         //storeList01 : 왕십리역 6번출구
-        let yukSha = Store(storeName:"yukSha", name: "육앤샤", info: "육회와 샤브샤브의 조화")
-        let eightFt = Store(storeName:"eightFt", name: "8피트", info: "시원한 루프탑 바에서 맥주 한 잔")
-        let gaengSaeng = Store(storeName: "gaengSaeng", name: "갱생", info: "교도소 컨셉의 복고 술집")
-        let hanSin = Store(storeName: "hanSin", name: "한신포차", info: "메뉴 성공률 100%")
-        let hChong = Store(storeName:"hChong", name: "회뜨는 총각", info: "한양대가 본점이라는 사실, 알고 계셨나요?")
-        let noGaRi = Store(storeName: "noGaRi", name: "노가리슈퍼", info:  "왕십리 가성비 술집")
-        let meJong = Store(storeName: "meJong", name: "메종드 혁이네", info: "만석일 땐 불이 들어와요")
-        let nakWon = Store(storeName: "nakWon", name: "낙원스낵", info: "간단하게 피맥")
-        let bucketList = Store(storeName: "bucketList", name: "버킷리스트", info: "분위기 좋은 칵테일 바")
-        let dieCoZi = Store(storeName: "dieCoZi", name: "다이꼬지", info: "한양대 인근 이자카야")
+        let yukSha = Store(storeName:"yukSha", name: "육앤샤", address: "성동구 마조로5길 5", detail: "육회와 샤브샤브의 조화", recFood: "육회+샤브, 육회비빔밥, 육사시미")
+        let eightFt = Store(storeName:"eightFt", name: "8피트", address: "성동구 마조로1길 39", detail: "시원한 루프탑 바에서 맥주 한 잔", recFood: "피자, 플래터, 감바스")
+        let gaengSaeng = Store(storeName: "gaengSaeng", name: "갱생", address: "성동구 마조로7길 5", detail: "착하게 삽시다", recFood: "로제파스탕, 명란크림파스탕, 옥수수콘")
+        let hanSin = Store(storeName: "hanSin", name: "한신포차", address: "성동구 마조로5길 12-1", detail: "메뉴 성공률 100%", recFood: "국물닭발, 주먹밥, 계란말이")
+        let hChong = Store(storeName:"hChong", name: "회뜨는 총각", address: "성동구 마조로5길 4-12", detail: "한양대가 본점이라는 사실, 알고 계셨나요?", recFood: "모듬 회")
+        let noGaRi = Store(storeName: "noGaRi", name: "노가리슈퍼", address: "성동구 행당로17길 21", detail: "왕십리 가성비 술집", recFood: "짝태, 닭치기한상후라이드")
+        let meJong = Store(storeName: "meJong", name: "메종드 혁이네", address: "성동구 마조로3나길 27", detail: "만석일 땐 불이 들어와요", recFood: "바지락술찜, 삼치구이")
+        let nakWon = Store(storeName: "nakWon", name: "낙원스낵", address: "성동구 마조로5길 14", detail: "간단하게 피맥", recFood: "베이컨치즈피자, 마약옥수수")
+        let bucketList = Store(storeName: "bucketList", name: "버킷리스트", address: "성동구 마조로7길 13", detail: "분위기 좋은 칵테일 바", recFood: "라임 모히또")
+        let dieCoZi = Store(storeName: "dieCoZi", name: "다이꼬지", address: "성동구 마조로3나길 26", detail: "한양대 인근 이자카야", recFood: "통오징어그릴, 생연어회")
         
         //storeList02 : 한양시장
-        let cloudRain = Store(storeName: "cloudRain", name: "운우", info: "혼술하기 좋은 곳")
-        let dongChon = Store(storeName: "dongChon", name: "동촌", info: "밤막걸리가 맛있는 곳")
-        let gobStory = Store(storeName: "gobStory", name: "곱창이야기", info: "소곱창과 가래떡의 조합")
-        let goldenDragon = Store(storeName: "goldenDragon", name: "금룡", info: "24시간 중국집, 배달도 됩니다")
-        let hoDoRi = Store(storeName: "hoDoRi", name: "호돌이전파사", info: "인생은 황태를 먹기 전과 후로 나뉜다")
-        let jinGook = Store(storeName: "jinGook", name: "진국", info: "24시간 해장국 맛집")
-        let jeJu = Store(storeName: "jeJu", name: "제주뒷고기", info: "뒷고기 한 점과 한라산의 조화")
-        let kyeongSeong = Store(storeName: "kyeongSeong", name: "경성주막1929", info: "가성비 좋은 퓨전 이자카야")
-        let lightHouse = Store(storeName: "lightHouse", name: "조명창고", info: "소개팅과 데이트, 모임에 적합한 분위기 좋은 술집")
-        let manLi = Store(storeName: "manLi", name: "만리향 양꼬치", info: "한양대 대표 양꼬치 집")
-        let moonBar = Store(storeName: "moonBar", name: "달바", info: "분위기 좋은 곳에서 칵테일 한 잔")
-        let naGune = Store(storeName:"naGuNe", name: "나그네파전", info: "동동주와 파전이 맛있는, 비가 오면 떠오르는 곳")
-        let ggoZiPub = Store(storeName: "ggoZiPub", name: "꼬지펍", info: "직화구이 꼬치가 맛있는 왕십리 술집")
-        
-        
+        let cloudRain = Store(storeName: "cloudRain", name: "운우", address: "성동구 행당동 158-53", detail: "혼술하기 좋은 곳", recFood: "통삼겹조림, 보리소주")
+        let dongChon = Store(storeName: "dongChon", name: "동촌", address: "성동구 행당1동 158-58", detail: "밤막걸리가 맛있는 곳", recFood: "김치전, 알밤막걸리")
+        let gobStory = Store(storeName: "gobStory", name: "곱창이야기", address: "성동구 마조로5길 3", detail: "소곱창과 가래떡의 조합", recFood: "한우곱창모듬")
+        let goldenDragon = Store(storeName: "goldenDragon", name: "금룡", address: "성동구 마조로 17 한양시장", detail: "24시간 중국집, 배달도 됩니다",recFood: "세트메뉴, 삼선짬뽕")
+        let hoDoRi = Store(storeName: "hoDoRi", name: "호돌이전파사", address: "성동구 마조로3길 10", detail: "인생은 황태를 먹기 전과 후로 나뉜다", recFood: "황태, 촉촉오징어")
+        let jinGook = Store(storeName: "jinGook", name: "진국", address: "성동구 마조로 7", detail: "24시간 해장국 맛집", recFood: "국밥, 물냉면")
+        let jeJu = Store(storeName: "jeJu", name: "제주뒷고기", address: "성동구 마조로 17 한양시장", detail: "뒷고기 한 점과 한라산의 조화", recFood: "뒷고기, 고기국수")
+        let kyeongSeong = Store(storeName: "kyeongSeong", name: "경성주막1929", address: "성동구 마조로 11", detail: "가성비 좋은 퓨전이자카야", recFood: "오코노미야키, 나베")
+        let lightHouse = Store(storeName: "lightHouse", name: "조명창고", address: "성동구 마조로 22-3", detail: "소개팅과 데이트, 모임에 적합한 분위기 좋은 술집", recFood: "매콤크림파스타, 갈릭새우크림파스타")
+        let manLi = Store(storeName: "manLi", name: "만리향 양꼬치", address: "성동구 마조로5길 3-3", detail: "한양대 대표 양꼬치 집", recFood: "꿔바로우, 양꼬치")
+        let moonBar = Store(storeName: "moonBar", name: "달바", address: "성동구 마조로3가길 21", detail: "분위기 좋은 곳에서 칵테일 한 잔", recFood: "칵테일")
+        let naGune = Store(storeName:"naGuNe", name: "나그네파전", address: "성동구 마조로1길 4", detail: "동동주와 파전이 맛있는, 비가 오면 떠오르는 곳", recFood: "파전, 찹쌀동동주")
+        let ggoZiPub = Store(storeName: "ggoZiPub", name: "꼬지펍", address: "성동구 마조로 17", detail: "직화구이 꼬치가 맛있는 왕십리 술집", recFood: "삼겹살꼬지, 파닭꼬지")
         
         //storeList03 : 사근동
-        let hoChicken = Store(storeName: "hoChicken", name: "호치킨", info: "저렴하게 맛보는 바삭한 크리스피 치킨")
-        let boGoSipDa = Store(storeName: "boGoSipDa", name: "지금, 보고싶다", info: "밤은 짙고 술은 차고 지금, 보고싶다..국내 최초 갤러리전 감성주점")
-        let againChicken = Store(storeName: "againChicken", name: "다시올치킨", info: "닭 요리 전문점")
-        let giRi = Store(storeName: "giRi", name: "길이식당", info: "성동구를 대표하는 마라탕 맛집")
-        let pomFrites = Store(storeName: "pomFrites", name: "폼프리츠", info: "고소고소한 감자튀김과 시원한 맥주")
-        let siKi = Store(storeName: "siKi", name: "시키", info: "부담 없이 사케와 일본식 안주를 즐길 수 있는 곳")
-        let spicyDakBal = Store(storeName: "spicyDakbal", name: "한양대신닭발", info: "한양대 대표 닭발집")
-        
-        
+        let hoChicken = Store(storeName: "hoChicken", name: "호치킨", address: "성동구 마조로 32", detail: "저렴하게 맛보는 바삭한 크리스피 치킨", recFood: "치슐랭, 크리스피치킨")
+        let boGoSipDa = Store(storeName: "boGoSipDa", name: "지금, 보고싶다", address: "성동구 마조로 25 제일빌딩", detail: "밤은 짙고 술은 차고 지금, 보고싶다. 국내 최초 갤러리전 감성주점", recFood: "감바스, 밀푀유나베")
+        let againChicken = Store(storeName: "againChicken", name: "다시올치킨", address: "성동구 사근동8길 8", detail: "닭요리 전문점", recFood: "닭칼국수, 순살후라이드")
+        let giRi = Store(storeName: "giRi", name: "길이식당", address: "성동구 사근동길 21-1", detail: "성동구를 대표하는 마라탕 맛집", recFood: "마라탕, 마라샹궈, 온면")
+        let pomFrites = Store(storeName: "pomFrites", name: "폼프리츠", address: "성동구 사근동길 6", detail: "고소고소한 감자튀김과 시원한 맥주", recFood: "L + 소스2개, 스노우비어")
+        let siKi = Store(storeName: "siKi", name: "시키", address: "성동구 사근동길 43", detail: "부담 없이 사케와 일본식 안주를 즐길 수 있는 곳", recFood: "삼겹숙주볶음, 고등어초회")
+        let spicyDakBal = Store(storeName: "spicyDakbal", name: "한양대신닭발", address: "성동구 마조로 34", detail: "한양대 대표 닭발집", recFood: "무뼈닭발, 닭알찜, 주먹밥")
         
         //storeList04 : 도선동
-        let ddangKo = Store(storeName: "ddangKo", name: "땅코참숯구이", info: "성동구 no.1 고기집")
-        let gulAndZimLove = Store(storeName: "gulAndZimLove", name: "굴과 찜사랑", info: "해물 덕후들은 모여라! 생방송투데이에도 나온 해물찜 전문점")
-        let lifeBeer = Store(storeName: "lifeBeer", name: "생활맥주", info: "집가는 길에 가볍게 맥주 한 잔 어때요?")
-        let matNa = Store(storeName: "matNa", name: "맛나곱창", info: "왕십리 곱창골목 중에서도 유명한 곱창집")
-        let yeopGi = Store(storeName: "yeopGi", name: "엽기꼼닭발", info: "수요미식회에도 나온 닭발과 꼼장어 맛집")
-        
-        
-        
+        let ddangKo = Store(storeName: "ddangKo", name: "땅코참숯구이", address: "성동구 행당로17길 26", detail: "성동구 고기집 no.1", recFood: "삼겹살, 목살, 물냉면")
+        let gulAndZimLove = Store(storeName: "gulAndZimLove", name: "굴과 찜사랑", address: "성동구 행당로17길 23", detail: "해물 덕후들은 모여라! 생방송투데이에도 나온 해물찜 전문점", recFood: "해물찜, 굴국밥, 굴칼국수")
+        let lifeBeer = Store(storeName: "lifeBeer", name: "생활맥주", address: "성동구 행당로17길 22-1", detail: "집가는 길 가볍게 맥주 한 잔 어때요?",recFood: "크리스피 텐더와 감자, 생맥주")
+        let matNa = Store(storeName: "matNa", name: "맛나곱창", address: "성동구 홍익동 130-1", detail: "왕십리 곱창골목 중에서도 유명한 곱창집", recFood: "소곱창구이")
+        let yeopGi = Store(storeName: "yeopGi", name: "엽기꼼닭발", address: "성동구 왕십리로22길 3", detail: "수요미식회에도 나온 닭발과 꼼장어 맛집", recFood: "엽기꼼장어, 뼈없는 닭발")
         
         /*test : collection view 에 해당 내용이 잘 들어가는지 테스트
          let store1 = Store(storeName: "그림1", name: "조명창고", info: "카시스소다가 정말 맛있어요!")

@@ -16,10 +16,14 @@ struct Store{
     var storeImg: UIImage?
     var storeName: String
     var storeInfo: String
+    var storeAddress: String
+    var storeMenu: String
     
-    init(storeName: String, name: String, info: String){
+    init(storeName: String, name: String, address: String, detail: String, recFood: String){
         self.storeImg = UIImage(named: storeName)
         self.storeName = name
-        self.storeInfo = info
+        self.storeInfo = detail
+        self.storeAddress = address
+        self.storeMenu = recFood
     }
 }
