@@ -314,7 +314,6 @@ extension RecommendVC: UICollectionViewDelegate {
             dvc.menuDetailList = store
         }
         
-        // test code: 해당 cell 이 제대로 클릭 되는지 테스트용
         print("selected ", selectedRecommend.recommendTitle)
         navigationController?.pushViewController(dvc, animated: true)
         
