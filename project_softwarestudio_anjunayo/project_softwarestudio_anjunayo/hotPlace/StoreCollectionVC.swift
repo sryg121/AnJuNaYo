@@ -109,7 +109,7 @@ class StoreCollectionVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         let userLocData = UserDefaults.standard.value(forKey: "userLoc") as! String
-        print(userLocData)
+        
         if userLocData == "지역" {
             locClickButton = 0
             locLabel.text = "어디를 가볼까?"

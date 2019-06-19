@@ -17,8 +17,13 @@ class LocVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     @IBOutlet var setLoc: UIButton!
     
+    @IBAction func cancelButton(_ sender: Any) {
+        isCancel = 1
+    }
+    
     var locArray = ["지역" ,"도선동", "사근동", "한양시장", "왕십리역 6번 출구"]
     var selectedRow = 100
+    var isCancel = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,13 +62,18 @@ class LocVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let dest = segue.destination as! SettingVC
-        if selectedRow != 100 {
-            dest.loc = locArray[selectedRow]
-            UserDefaults.standard.set(locArray[selectedRow], forKey: "userLoc")
+        if isCancel == 0 {
+            if selectedRow != 100 {
+                dest.loc = locArray[selectedRow]
+                UserDefaults.standard.set(locArray[selectedRow], forKey: "userLoc")
+            } else {
+                dest.loc = "지역"
+                UserDefaults.standard.set("지역", forKey: "userLoc")
+            }
         } else {
-            dest.loc = "지역"
-            UserDefaults.standard.set("지역", forKey: "userLoc")
+            
         }
+        
     }
 
 }
