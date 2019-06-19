@@ -140,7 +140,7 @@ class StoreCollectionVC: UIViewController {
         // gesture 가 발생한 좌표를 반환합니다.
         let location = gesture.location(in: self.storeCollection)
         
-        // 해당 좌표에 musicCollection 의 item 이 존재한다면 indexPath 에 해당 item 의 index 를 반환합니다.
+        // 해당 좌표에 storeCollection 의 item 이 존재한다면 indexPath 에 해당 item 의 index 를 반환합니다.
         guard let indexPath = storeCollection.indexPathForItem(at: location) else {return}
         
         // 해당하는 index 의 model 를 반환합니다.
@@ -150,10 +150,10 @@ class StoreCollectionVC: UIViewController {
         let alert = UIAlertController(title: "\(item.storeName) - \(item.storeInfo)", message: nil, preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: "삭제", style: .destructive, handler: { (_) in
             
-            // musicList 배열에서 해당 모델을 제거합니다.
+            // storeList 배열에서 해당 모델을 제거합니다.
             self.storeList.remove(at: indexPath.item)
             
-            // musicCollection 에서 해당하는 index 의 item 을 삭제합니다.
+            // storeCollection 에서 해당하는 index 의 item 을 삭제합니다.
             self.storeCollection.deleteItems(at: [indexPath])
         }))
         
@@ -167,7 +167,7 @@ class StoreCollectionVC: UIViewController {
 extension StoreCollectionVC: UICollectionViewDataSource {
     
     // UICollectionView 에 얼마나 많은 아이템을 담을 지 설정합니다.
-    // 현재는 musicList 배열의 count 갯수 만큼 반환합니다.
+    // 현재는 storeList 배열의 count 갯수 만큼 반환합니다.
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         switch locClickButton {
