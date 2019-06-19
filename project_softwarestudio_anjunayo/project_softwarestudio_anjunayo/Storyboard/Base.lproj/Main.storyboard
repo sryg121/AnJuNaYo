@@ -587,7 +587,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jw9-i4-XKe">
-                                <rect key="frame" x="0.0" y="343" width="375" height="275"/>
+                                <rect key="frame" x="0.0" y="343" width="375" height="324"/>
                                 <color key="backgroundColor" red="0.99562591310000004" green="0.97338408229999995" blue="0.91371744870000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4zi-KP-6LV">
                                     <size key="itemSize" width="203" height="221"/>
@@ -692,7 +692,7 @@
                             <constraint firstItem="iWd-r4-JYz" firstAttribute="trailing" secondItem="rdT-gI-Vk7" secondAttribute="trailing" id="41t-6J-E9Y"/>
                             <constraint firstItem="jw9-i4-XKe" firstAttribute="top" secondItem="yEu-vV-z9F" secondAttribute="bottom" constant="170" id="5zY-b5-5JZ"/>
                             <constraint firstItem="iWd-r4-JYz" firstAttribute="bottom" secondItem="rdT-gI-Vk7" secondAttribute="bottom" constant="310" id="9Qg-2F-C7S"/>
-                            <constraint firstItem="iWd-r4-JYz" firstAttribute="bottom" secondItem="jw9-i4-XKe" secondAttribute="bottom" id="AWe-nZ-wpP"/>
+                            <constraint firstAttribute="bottom" secondItem="jw9-i4-XKe" secondAttribute="bottom" id="AWe-nZ-wpP"/>
                             <constraint firstItem="iWd-r4-JYz" firstAttribute="trailing" secondItem="jw9-i4-XKe" secondAttribute="trailing" id="E5I-k2-RpQ"/>
                             <constraint firstItem="CKX-Ez-z7O" firstAttribute="leading" secondItem="iWd-r4-JYz" secondAttribute="leading" constant="72" id="MRh-ud-aCn"/>
                             <constraint firstItem="jw9-i4-XKe" firstAttribute="top" secondItem="CKX-Ez-z7O" secondAttribute="bottom" constant="8" id="TAH-80-uFO"/>
@@ -798,9 +798,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDW-vr-4R3" customClass="RouletteView" customModule="project_softwarestudio_anjunayo" customModuleProvider="target">
                                 <rect key="frame" x="8" y="114" width="359" height="359"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▲" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j1-Sx-EB0">
+                                <rect key="frame" x="171" y="456" width="32" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzs-sT-iEG">
-                                <rect key="frame" x="163" y="506" width="62" height="31"/>
-                                <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="17"/>
+                                <rect key="frame" x="120" y="517" width="135" height="40"/>
+                                <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="25"/>
                                 <state key="normal" title="돌려돌려">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -808,22 +814,18 @@
                                     <action selector="rotateClicked:" destination="tpP-Mt-VUH" eventType="touchUpInside" id="hwo-aP-EqL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▲" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j1-Sx-EB0">
-                                <rect key="frame" x="171" y="456" width="32" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99562591314315796" green="0.97338408231735229" blue="0.91371744871139526" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="41T-Mi-dVm" firstAttribute="bottom" secondItem="Mzs-sT-iEG" secondAttribute="bottom" constant="61" id="03O-7h-58b"/>
                             <constraint firstItem="7j1-Sx-EB0" firstAttribute="top" secondItem="IDW-vr-4R3" secondAttribute="bottom" constant="-17" id="06B-Ki-krl"/>
                             <constraint firstItem="IDW-vr-4R3" firstAttribute="leading" secondItem="7j1-Sx-EB0" secondAttribute="trailing" constant="-195" id="AXq-DY-oJ4"/>
                             <constraint firstItem="41T-Mi-dVm" firstAttribute="bottom" secondItem="IDW-vr-4R3" secondAttribute="bottom" constant="145" id="F2I-Tc-EaD"/>
-                            <constraint firstItem="Mzs-sT-iEG" firstAttribute="leading" secondItem="7j1-Sx-EB0" secondAttribute="trailing" constant="-40" id="JrM-JS-gv3"/>
+                            <constraint firstItem="41T-Mi-dVm" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Mzs-sT-iEG" secondAttribute="trailing" constant="120" id="HJu-s6-Vbw"/>
+                            <constraint firstItem="Mzs-sT-iEG" firstAttribute="leading" relation="lessThanOrEqual" secondItem="41T-Mi-dVm" secondAttribute="leading" constant="120" id="JrM-JS-gv3"/>
                             <constraint firstItem="41T-Mi-dVm" firstAttribute="trailing" secondItem="IDW-vr-4R3" secondAttribute="trailing" constant="8" id="LQK-pm-RPg"/>
                             <constraint firstItem="IDW-vr-4R3" firstAttribute="leading" secondItem="41T-Mi-dVm" secondAttribute="leading" constant="8" id="WwO-r6-qDK"/>
-                            <constraint firstItem="Mzs-sT-iEG" firstAttribute="top" secondItem="7j1-Sx-EB0" secondAttribute="bottom" constant="8" id="igV-V3-w5i"/>
+                            <constraint firstItem="Mzs-sT-iEG" firstAttribute="top" relation="lessThanOrEqual" secondItem="7j1-Sx-EB0" secondAttribute="bottom" constant="30" id="igV-V3-w5i"/>
                             <constraint firstItem="IDW-vr-4R3" firstAttribute="top" secondItem="41T-Mi-dVm" secondAttribute="top" constant="50" id="mxP-qX-Rze"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="41T-Mi-dVm"/>

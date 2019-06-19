@@ -50,7 +50,41 @@ class StoreCollectionVC: UIViewController {
     var storeDosun:[Store] = []
     
     var locClickButton: Int = 0
+
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let tb = self.tabBarController?.tabBar
+        if tb?.isHidden == true {
+            changeBar(hidden: false)
+        } else {
+            changeBar(hidden: true)
+        }
+        
+    }
     
+    func changeBar(hidden: Bool) {
+        guard let tb = self.tabBarController?.tabBar else {
+            return
+        }
+        
+        if tb.isHidden == hidden {
+            return
+        }
+        
+        let frame = tb.frame
+        let offset = hidden ? (frame.size.height) : -(frame.size.height)
+        let duration: TimeInterval = 0.5
+        tb.isHidden = false
+        UIView.animate(withDuration: duration, animations: {
+            () -> Void in
+            tb.frame = frame.offsetBy(dx: 0, dy: offset)
+        }, completion: {
+            (isTrue) -> Void in
+            if isTrue {
+                tb.isHidden = hidden
+            }
+            
+        })
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

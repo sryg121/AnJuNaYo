@@ -17,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if let tbController = self.window?.rootViewController as? UITabBarController {
+            
+            if let tbItems = tbController.tabBar.items {
+                for tbItem in tbItems {
+                    tbItem.setTitleTextAttributes([NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): UIColor.gray], for: .disabled)
+                    tbItem.setTitleTextAttributes([NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): UIColor.black], for: .selected)
+                }
+            }
+            
+            tbController.tabBar.tintColor = UIColor.black
+            tbController.tabBar.barTintColor = UIColor.white
+        }
+        
+        
         return true
     }
 
