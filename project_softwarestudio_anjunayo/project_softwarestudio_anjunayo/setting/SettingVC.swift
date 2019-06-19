@@ -14,6 +14,8 @@ class SettingVC: UIViewController, UITableViewDataSource {
     
     var settingList: [Setting] = []
     
+    var loc: String = "지역"
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return settingList.count
     }
@@ -72,10 +74,24 @@ extension SettingVC: UITableViewDelegate {
         } else if indexPath.row == 3 {
             let tvc = storyboard?.instantiateViewController(withIdentifier: "TermVC") as! TermVC
             navigationController?.pushViewController(tvc, animated: true)
-        } else {
+        } else if indexPath.row == 1 {
             let avc = storyboard?.instantiateViewController(withIdentifier: "AnnounceVC") as! AnnounceVC
             navigationController?.pushViewController(avc, animated: true)
+        } else {
+            let loc = "지역"
+            performSegue(withIdentifier: "toLoc", sender: loc)            
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toLoc" {
+            let vc = segue.destination as! LocVC
+            
+        }
+    }
+    
+    @IBAction func toBase(segue: UIStoryboardSegue){
+        
     }
 }
 
@@ -88,7 +104,8 @@ extension SettingVC{
         let setting2 = Setting(item: "공지사항")
         let setting3 = Setting(item: "앱 정보")
         let setting4 = Setting(item: "약관 및 정책")
+        let setting5 = Setting(item: "지역 설정")
         
-        settingList = [setting1, setting2, setting3, setting4]
+        settingList = [setting1, setting2, setting3, setting4, setting5]
     }
 }

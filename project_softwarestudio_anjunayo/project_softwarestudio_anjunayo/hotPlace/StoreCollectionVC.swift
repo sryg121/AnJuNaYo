@@ -15,6 +15,8 @@ class StoreCollectionVC: UIViewController {
     //클릭한 위치 표시
     @IBOutlet var locLabel: UILabel!
     
+    @IBOutlet var mapImageView: UIImageView!
+    
     //왕십리역 6번 출구
     @IBAction func storeLoc1(_ sender: Any) {
         locClickButton = 1
@@ -103,6 +105,34 @@ class StoreCollectionVC: UIViewController {
         
         storeCollection.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGesture(gesture:))))
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let userLocData = UserDefaults.standard.value(forKey: "userLoc") as! String
+        print(userLocData)
+        if userLocData == "지역" {
+            locClickButton = 0
+            locLabel.text = "어디를 가볼까?"
+            storeCollection.reloadData()
+        } else {
+            if userLocData == "왕십리역 6번 출구" {
+                locClickButton = 1
+                locLabel.text = "왕십리역 6번 출구"
+                storeCollection.reloadData()
+            } else if userLocData == "한양시장" {
+                locClickButton = 2
+                locLabel.text = "한양시장"
+                storeCollection.reloadData()
+            } else if userLocData == "사근동" {
+                locClickButton = 3
+                locLabel.text = "사근동"
+                storeCollection.reloadData()
+            } else if userLocData == "도선동" {
+                locClickButton = 4
+                locLabel.text = "도선동"
+                storeCollection.reloadData()
+            }
+        }
     }
     
     @objc func handleLongPressGesture(gesture: UIGestureRecognizer){

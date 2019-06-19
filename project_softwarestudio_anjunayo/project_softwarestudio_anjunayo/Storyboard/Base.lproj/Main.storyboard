@@ -70,6 +70,7 @@
                     <navigationItem key="navigationItem" title="설정" id="poV-4I-kio"/>
                     <connections>
                         <outlet property="settingView" destination="PgE-1A-qaA" id="283-Zh-Raz"/>
+                        <segue destination="Xzv-Vk-Qpw" kind="presentation" identifier="toLoc" id="rSK-cf-qRW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qr4-YH-68m" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -256,7 +257,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U6F-37-oRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2950" y="4003"/>
+            <point key="canvasLocation" x="2951" y="3938"/>
+        </scene>
+        <!--LocVC-->
+        <scene sceneID="Tqo-0P-EIb">
+            <objects>
+                <viewController storyboardIdentifier="LocVC" id="Xzv-Vk-Qpw" customClass="LocVC" customModule="project_softwarestudio_anjunayo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vc8-t7-hX9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmA-wW-0ae">
+                                <rect key="frame" x="287" y="243" width="44" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="설정">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MqD-eS-5o7" kind="unwind" unwindAction="toBaseWithSegue:" id="H8a-LQ-WAu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="지역" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyT-LN-DhG">
+                                <rect key="frame" x="16" y="150" width="343" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OXY-uY-WHd">
+                                <rect key="frame" x="0.0" y="293" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fvw-CF-tt4"/>
+                    </view>
+                    <connections>
+                        <outlet property="locLabel" destination="MyT-LN-DhG" id="PS6-8S-OrL"/>
+                        <outlet property="locPick" destination="OXY-uY-WHd" id="csn-Cu-wgP"/>
+                        <outlet property="setLoc" destination="YmA-wW-0ae" id="5mf-p7-mmg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifE-Yk-a2o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="MqD-eS-5o7" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2008.8" y="2496.7016491754125"/>
         </scene>
         <!--안주추천-->
         <scene sceneID="dkp-0e-UMX">
@@ -721,6 +767,7 @@
                     <navigationItem key="navigationItem" title="핫플레이스" id="3xD-sD-PgZ"/>
                     <connections>
                         <outlet property="locLabel" destination="CKX-Ez-z7O" id="do8-W0-IF1"/>
+                        <outlet property="mapImageView" destination="rdT-gI-Vk7" id="tfE-91-Jct"/>
                         <outlet property="storeCollection" destination="jw9-i4-XKe" id="hVJ-mg-pW0"/>
                     </connections>
                 </viewController>
@@ -798,22 +845,22 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDW-vr-4R3" customClass="RouletteView" customModule="project_softwarestudio_anjunayo" customModuleProvider="target">
                                 <rect key="frame" x="8" y="114" width="359" height="359"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzs-sT-iEG">
+                                <rect key="frame" x="120" y="517" width="135" height="40"/>
+                                <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="25"/>
+                                <state key="normal" title="돌려돌려">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="rotateClicked:" destination="tpP-Mt-VUH" eventType="touchUpInside" id="hwo-aP-EqL"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▲" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j1-Sx-EB0">
                                 <rect key="frame" x="171" y="456" width="32" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzs-sT-iEG">
-                                <rect key="frame" x="120" y="517" width="135" height="40"/>
-                                <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="25"/>
-                                <state key="normal" title="돌려돌려">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="rotateClicked:" destination="tpP-Mt-VUH" eventType="touchUpInside" id="hwo-aP-EqL"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99562591314315796" green="0.97338408231735229" blue="0.91371744871139526" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>

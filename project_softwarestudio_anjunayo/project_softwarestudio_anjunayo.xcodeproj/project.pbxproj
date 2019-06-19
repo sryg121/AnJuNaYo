@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7BA3E06322B3A30F00A30A3B /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA3E06222B3A30F00A30A3B /* InfoVC.swift */; };
+		7BA3E06722BA5DF200A30A3B /* LocVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA3E06622BA5DF200A30A3B /* LocVC.swift */; };
 		F4022C48229416EA00DD3A52 /* RouletteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C47229416EA00DD3A52 /* RouletteVC.swift */; };
 		F4022C4B2294173700DD3A52 /* RouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C4A2294173700DD3A52 /* RouletteView.swift */; };
 		F4022C4D2294195900DD3A52 /* GZLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C4C2294195900DD3A52 /* GZLog.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		7BA3E06222B3A30F00A30A3B /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		7BA3E06622BA5DF200A30A3B /* LocVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocVC.swift; sourceTree = "<group>"; };
 		F4022C47229416EA00DD3A52 /* RouletteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteVC.swift; sourceTree = "<group>"; };
 		F4022C4A2294173700DD3A52 /* RouletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteView.swift; sourceTree = "<group>"; };
 		F4022C4C2294195900DD3A52 /* GZLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GZLog.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				F4DC2C1222B43091000A42EF /* AnnounceCell.swift */,
 				7BA3E06222B3A30F00A30A3B /* InfoVC.swift */,
 				F4DC2C0A22B419D4000A42EF /* TermVC.swift */,
+				7BA3E06622BA5DF200A30A3B /* LocVC.swift */,
 			);
 			path = setting;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				F4022C68229690CE00DD3A52 /* RecommendData.swift in Sources */,
 				F4022C4D2294195900DD3A52 /* GZLog.swift in Sources */,
 				F4DA39EB228181E5001CC984 /* Store.swift in Sources */,
+				7BA3E06722BA5DF200A30A3B /* LocVC.swift in Sources */,
 				F4022C752297DDF600DD3A52 /* WeatherTableViewCell.swift in Sources */,
 				F4022C5C22966B4A00DD3A52 /* SettingCell.swift in Sources */,
 				F4022C6422968E9C00DD3A52 /* RecommendCollectionViewCell.swift in Sources */,
