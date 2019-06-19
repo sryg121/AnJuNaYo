@@ -8,9 +8,6 @@
 
 import UIKit
 
-//날씨 상태 표현하는 string을 return하는 함수
-
-
 class RecommendVC: UIViewController {
 
     @IBOutlet weak var recommendView: UICollectionView!
