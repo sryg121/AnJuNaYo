@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeoT.ttf">
+            <string>AppleSDGothicNeoT00</string>
+        </array>
+        <array key="nanumsquareotf_regular.otf">
+            <string>NanumSquareOTFR</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--설정-->
         <scene sceneID="Sl3-Bu-zJe">
@@ -215,42 +223,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://github.com/ProjectInTheClass/Anjunayo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3c1-D5-ms2">
-                                <rect key="frame" x="8" y="142" width="359" height="23"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="19"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gJ-IP-9yS">
-                                <rect key="frame" x="104" y="113" width="166" height="1"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gJ-IP-9yS">
+                                <rect key="frame" x="88" y="113" width="200" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="DRg-PA-zmu"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="안주나요 서비스 약관" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHN-VI-we6">
-                                <rect key="frame" x="100" y="81" width="175" height="24"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="안주나요 서비스 약관" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHN-VI-we6">
+                                <rect key="frame" x="100" y="81" width="174" height="22.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="20"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="https://github.com/ProjectInTheClass/Anjunayo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3c1-D5-ms2">
+                                <rect key="frame" x="28" y="137" width="319" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.97254901959999995" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="3gJ-IP-9yS" firstAttribute="leading" secondItem="hIn-4Z-ZuN" secondAttribute="leadingMargin" constant="88" id="20d-QC-Tlh"/>
-                            <constraint firstItem="3c1-D5-ms2" firstAttribute="top" secondItem="3gJ-IP-9yS" secondAttribute="bottom" constant="28" id="40L-Cx-WFe"/>
-                            <constraint firstItem="VHN-VI-we6" firstAttribute="top" secondItem="vfB-4m-dQr" secondAttribute="top" constant="61" id="4ZI-8D-V7M"/>
-                            <constraint firstItem="vfB-4m-dQr" firstAttribute="trailing" secondItem="VHN-VI-we6" secondAttribute="trailing" constant="117" id="5az-0j-tbx"/>
-                            <constraint firstItem="vfB-4m-dQr" firstAttribute="trailing" secondItem="3c1-D5-ms2" secondAttribute="trailing" constant="8" id="EuI-rA-aH6"/>
-                            <constraint firstItem="3c1-D5-ms2" firstAttribute="leading" secondItem="vfB-4m-dQr" secondAttribute="leading" constant="8" id="J6Z-bn-WRw"/>
-                            <constraint firstItem="3gJ-IP-9yS" firstAttribute="top" secondItem="VHN-VI-we6" secondAttribute="bottom" constant="8" id="LNz-Ly-hGz"/>
-                            <constraint firstItem="vfB-4m-dQr" firstAttribute="trailing" secondItem="3gJ-IP-9yS" secondAttribute="trailing" constant="105" id="M0J-4n-xdV"/>
-                            <constraint firstItem="3gJ-IP-9yS" firstAttribute="centerX" secondItem="VHN-VI-we6" secondAttribute="centerX" id="nak-Ef-0R5"/>
-                            <constraint firstItem="VHN-VI-we6" firstAttribute="leading" secondItem="vfB-4m-dQr" secondAttribute="leading" constant="116" id="p0W-J2-qam"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vfB-4m-dQr"/>
                     </view>
                 </viewController>
@@ -348,7 +344,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="635-Pu-VJw">
                                                     <rect key="frame" x="20" y="223" width="303" height="24"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </label>
@@ -389,14 +385,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="999" text="temp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSz-Ot-Cmo">
-                                                    <rect key="frame" x="15" y="51" width="158" height="83"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="75"/>
+                                                    <rect key="frame" x="15" y="26" width="137" height="113"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeoT00" family="AppleSDGothicNeoT00" pointSize="65"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8d-NJ-31e">
                                                     <rect key="frame" x="15" y="110" width="34" height="29"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeoT00" family="AppleSDGothicNeoT00" pointSize="16"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -408,23 +404,23 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sue-z6-qEO">
-                                                    <rect key="frame" x="193" y="26" width="45" height="24"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                    <rect key="frame" x="189.5" y="26" width="48.5" height="24"/>
+                                                    <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="ZA7-6T-bWe" secondAttribute="bottom" constant="43" id="6Ut-bt-Pft"/>
-                                                <constraint firstItem="JSz-Ot-Cmo" firstAttribute="top" secondItem="h7W-VH-n8n" secondAttribute="topMargin" constant="40" id="H4O-kU-7bp"/>
                                                 <constraint firstItem="ZA7-6T-bWe" firstAttribute="leading" secondItem="sue-z6-qEO" secondAttribute="trailing" constant="8" id="KdX-wG-Ctk"/>
                                                 <constraint firstItem="d8d-NJ-31e" firstAttribute="top" secondItem="h7W-VH-n8n" secondAttribute="topMargin" constant="99" id="Kqe-Ym-59U"/>
                                                 <constraint firstItem="sue-z6-qEO" firstAttribute="top" secondItem="h7W-VH-n8n" secondAttribute="topMargin" constant="15" id="T7G-AA-aHd"/>
                                                 <constraint firstItem="d8d-NJ-31e" firstAttribute="leading" secondItem="h7W-VH-n8n" secondAttribute="leadingMargin" id="aPD-t9-6oK"/>
                                                 <constraint firstItem="JSz-Ot-Cmo" firstAttribute="leading" secondItem="h7W-VH-n8n" secondAttribute="leadingMargin" id="e3h-Z8-D3n"/>
+                                                <constraint firstItem="JSz-Ot-Cmo" firstAttribute="top" secondItem="sue-z6-qEO" secondAttribute="top" id="f1h-Hj-pz4"/>
                                                 <constraint firstItem="ZA7-6T-bWe" firstAttribute="top" secondItem="h7W-VH-n8n" secondAttribute="topMargin" constant="15" id="kqa-yZ-WSp"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="d8d-NJ-31e" secondAttribute="bottom" constant="30" id="mWs-df-uZ9"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="JSz-Ot-Cmo" secondAttribute="bottom" constant="35" id="pdA-s7-RPr"/>
+                                                <constraint firstItem="JSz-Ot-Cmo" firstAttribute="bottom" secondItem="d8d-NJ-31e" secondAttribute="bottom" id="qC2-LG-Yg4"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="ZA7-6T-bWe" secondAttribute="trailing" constant="14" id="wTq-kx-qyl"/>
                                                 <constraint firstItem="d8d-NJ-31e" firstAttribute="top" secondItem="sue-z6-qEO" secondAttribute="bottom" constant="60" id="zaH-xR-00I"/>
                                             </constraints>
@@ -443,8 +439,8 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👍 오늘의 날씨와 어울리는 안주" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAX-az-hCW">
-                                <rect key="frame" x="15" y="262" width="192" height="18"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <rect key="frame" x="15" y="262" width="199" height="17"/>
+                                <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -675,7 +671,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ild-pq-8kc">
                                                     <rect key="frame" x="20" y="0.0" width="305" height="325"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeoT00" family="AppleSDGothicNeoT00" pointSize="30"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -746,7 +742,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어디를 가볼까?   " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKX-Ez-z7O">
                                 <rect key="frame" x="72" y="314" width="231" height="21"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeoT00" family="AppleSDGothicNeoT00" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
