@@ -16,11 +16,11 @@ class RouletteVC: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        rouletteView.diskImageName = "roulette"
+        rouletteView.diskImageName = "roulette_2"
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         imageView.contentMode = .scaleAspectFit
-        let image = UIImage(named: "logosample")
+        let image = UIImage(named: "logoType")
         imageView.image = image
         navigationItem.titleView = imageView
         
