@@ -25,10 +25,8 @@
 		F4022C752297DDF600DD3A52 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4022C742297DDF600DD3A52 /* WeatherTableViewCell.swift */; };
 		F412C4A9229D4C5F00D82BD6 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412C4A8229D4C5F00D82BD6 /* model.swift */; };
 		F477427922AA6FE40019A11F /* BMDOHYEON_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = F477427422AA6F590019A11F /* BMDOHYEON_otf.otf */; };
-		F477427A22AA6FEB0019A11F /* BMYEONSUNG_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = F477427822AA6FA20019A11F /* BMYEONSUNG_otf.otf */; };
 		F477427B22AA6FED0019A11F /* nanumsquareotf_regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F477427622AA6F7B0019A11F /* nanumsquareotf_regular.otf */; };
 		F477427C22AA6FF00019A11F /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = F477427522AA6F6C0019A11F /* BMHANNA_11yrs_otf.otf */; };
-		F477427D22AA6FF30019A11F /* a시네마L.otf in Resources */ = {isa = PBXBuildFile; fileRef = F477427722AA6F8C0019A11F /* a시네마L.otf */; };
 		F4DA39EB228181E5001CC984 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA39EA228181E5001CC984 /* Store.swift */; };
 		F4DC2C0922B24F69000A42EF /* RecommendDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC2C0822B24F69000A42EF /* RecommendDetailViewCell.swift */; };
 		F4DC2C0B22B419D4000A42EF /* TermVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC2C0A22B419D4000A42EF /* TermVC.swift */; };
@@ -42,6 +40,8 @@
 		F4FDE4F2227C2A5F00ECCE9C /* project_softwarestudio_anjunayo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4FDE4F0227C2A5F00ECCE9C /* project_softwarestudio_anjunayo.xcdatamodeld */; };
 		F4FDE4F4227C2A6100ECCE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4FDE4F3227C2A6100ECCE9C /* Assets.xcassets */; };
 		F4FDE4F7227C2A6100ECCE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4FDE4F5227C2A6100ECCE9C /* LaunchScreen.storyboard */; };
+		F6D9BB3222BAAA230037B9B4 /* AppleSDGothicNeoT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6D9BB3122BAAA230037B9B4 /* AppleSDGothicNeoT.ttf */; };
+		F6D9BB3422BAAA340037B9B4 /* AppleSDGothicNeoM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6D9BB3322BAAA340037B9B4 /* AppleSDGothicNeoM.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,8 +66,6 @@
 		F477427422AA6F590019A11F /* BMDOHYEON_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMDOHYEON_otf.otf; sourceTree = "<group>"; };
 		F477427522AA6F6C0019A11F /* BMHANNA_11yrs_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNA_11yrs_otf.otf; sourceTree = "<group>"; };
 		F477427622AA6F7B0019A11F /* nanumsquareotf_regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = nanumsquareotf_regular.otf; sourceTree = "<group>"; };
-		F477427722AA6F8C0019A11F /* a시네마L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "a시네마L.otf"; sourceTree = "<group>"; };
-		F477427822AA6FA20019A11F /* BMYEONSUNG_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMYEONSUNG_otf.otf; sourceTree = "<group>"; };
 		F4DA39EA228181E5001CC984 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F4DC2C0822B24F69000A42EF /* RecommendDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendDetailViewCell.swift; sourceTree = "<group>"; };
 		F4DC2C0A22B419D4000A42EF /* TermVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermVC.swift; sourceTree = "<group>"; };
@@ -83,6 +81,8 @@
 		F4FDE4F3227C2A6100ECCE9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4FDE4F6227C2A6100ECCE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4FDE4F8227C2A6100ECCE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6D9BB3122BAAA230037B9B4 /* AppleSDGothicNeoT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleSDGothicNeoT.ttf; path = "../../../../../../Downloads/Apple 산돌고딕 Neo/AppleSDGothicNeoT.ttf"; sourceTree = "<group>"; };
+		F6D9BB3322BAAA340037B9B4 /* AppleSDGothicNeoM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleSDGothicNeoM.ttf; path = "../../../../../../Downloads/Apple 산돌고딕 Neo/AppleSDGothicNeoM.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,10 +168,10 @@
 			isa = PBXGroup;
 			children = (
 				F477427622AA6F7B0019A11F /* nanumsquareotf_regular.otf */,
+				F6D9BB3322BAAA340037B9B4 /* AppleSDGothicNeoM.ttf */,
+				F6D9BB3122BAAA230037B9B4 /* AppleSDGothicNeoT.ttf */,
 				F477427422AA6F590019A11F /* BMDOHYEON_otf.otf */,
-				F477427822AA6FA20019A11F /* BMYEONSUNG_otf.otf */,
 				F477427522AA6F6C0019A11F /* BMHANNA_11yrs_otf.otf */,
-				F477427722AA6F8C0019A11F /* a시네마L.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -278,14 +278,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F477427A22AA6FEB0019A11F /* BMYEONSUNG_otf.otf in Resources */,
-				F477427D22AA6FF30019A11F /* a시네마L.otf in Resources */,
 				F4FDE4F7227C2A6100ECCE9C /* LaunchScreen.storyboard in Resources */,
 				F4FDE4F4227C2A6100ECCE9C /* Assets.xcassets in Resources */,
 				F477427B22AA6FED0019A11F /* nanumsquareotf_regular.otf in Resources */,
+				F6D9BB3222BAAA230037B9B4 /* AppleSDGothicNeoT.ttf in Resources */,
 				F477427C22AA6FF00019A11F /* BMHANNA_11yrs_otf.otf in Resources */,
 				F4FDE4EF227C2A5F00ECCE9C /* Main.storyboard in Resources */,
 				F477427922AA6FE40019A11F /* BMDOHYEON_otf.otf in Resources */,
+				F6D9BB3422BAAA340037B9B4 /* AppleSDGothicNeoM.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

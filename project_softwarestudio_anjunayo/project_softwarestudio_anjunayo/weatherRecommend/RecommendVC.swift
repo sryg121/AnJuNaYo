@@ -81,7 +81,7 @@ class RecommendVC: UIViewController {
         // set navigation bar title image
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         imageView.contentMode = .scaleAspectFit
-        let image = UIImage(named: "logosample")
+        let image = UIImage(named: "logoType")
         imageView.image = image
         navigationItem.titleView = imageView
  
