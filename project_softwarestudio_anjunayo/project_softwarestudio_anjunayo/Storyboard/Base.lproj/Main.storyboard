@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="AppleSDGothicNeoM.ttf">
+            <string>AppleSDGothicNeoM00</string>
+        </array>
         <array key="AppleSDGothicNeoT.ttf">
             <string>AppleSDGothicNeoT00</string>
         </array>
@@ -319,7 +322,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ake-H9-V7z">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ake-H9-V7z">
                                 <rect key="frame" x="0.0" y="277" width="375" height="366"/>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.97254901959999995" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vud-QH-ezz">
@@ -342,11 +345,11 @@
                                                         <constraint firstAttribute="width" secondItem="Szr-32-Tys" secondAttribute="height" multiplier="101:66" id="Lcr-HT-okb"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="635-Pu-VJw">
-                                                    <rect key="frame" x="20" y="223" width="303" height="24"/>
-                                                    <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="635-Pu-VJw">
+                                                    <rect key="frame" x="20" y="259" width="303" height="24"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
@@ -385,8 +388,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="999" text="temp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSz-Ot-Cmo">
-                                                    <rect key="frame" x="15" y="26" width="137" height="113"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeoT00" family="AppleSDGothicNeoT00" pointSize="65"/>
+                                                    <rect key="frame" x="15" y="26" width="158" height="113"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeoT00" family="AppleSDGothicNeoT00" pointSize="75"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -404,8 +407,8 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sue-z6-qEO">
-                                                    <rect key="frame" x="189.5" y="26" width="48.5" height="24"/>
-                                                    <fontDescription key="fontDescription" name="NanumSquareOTFR" family="NanumSquareOTF" pointSize="20"/>
+                                                    <rect key="frame" x="193.5" y="26" width="44.5" height="24"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeoM00" family="AppleSDGothicNeoM00" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -647,7 +650,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jw9-i4-XKe">
-                                <rect key="frame" x="0.0" y="343" width="375" height="275"/>
+                                <rect key="frame" x="0.0" y="343" width="375" height="325"/>
                                 <color key="backgroundColor" red="0.99562591310000004" green="0.97338408229999995" blue="0.91371744870000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4zi-KP-6LV">
                                     <size key="itemSize" width="203" height="221"/>
@@ -754,7 +757,7 @@
                             <constraint firstItem="iWd-r4-JYz" firstAttribute="trailing" secondItem="rdT-gI-Vk7" secondAttribute="trailing" id="41t-6J-E9Y"/>
                             <constraint firstItem="jw9-i4-XKe" firstAttribute="top" secondItem="yEu-vV-z9F" secondAttribute="bottom" constant="170" id="5zY-b5-5JZ"/>
                             <constraint firstItem="iWd-r4-JYz" firstAttribute="bottom" secondItem="rdT-gI-Vk7" secondAttribute="bottom" constant="310" id="9Qg-2F-C7S"/>
-                            <constraint firstAttribute="bottom" secondItem="jw9-i4-XKe" secondAttribute="bottom" id="AWe-nZ-wpP"/>
+                            <constraint firstAttribute="bottom" secondItem="jw9-i4-XKe" secondAttribute="bottom" constant="-50" id="AWe-nZ-wpP"/>
                             <constraint firstItem="iWd-r4-JYz" firstAttribute="trailing" secondItem="jw9-i4-XKe" secondAttribute="trailing" id="E5I-k2-RpQ"/>
                             <constraint firstItem="CKX-Ez-z7O" firstAttribute="leading" secondItem="iWd-r4-JYz" secondAttribute="leading" constant="72" id="MRh-ud-aCn"/>
                             <constraint firstItem="jw9-i4-XKe" firstAttribute="top" secondItem="CKX-Ez-z7O" secondAttribute="bottom" constant="8" id="TAH-80-uFO"/>
