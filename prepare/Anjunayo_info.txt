@@ -1,0 +1,28 @@
+앱 영문 이름 : Anjunayo
+
+앱의 설명문 (한글) :
+안주나요(Anjunayo)는 날씨에 어울리는 안주들을 추천하고 한양대학교 주변의 술집들을 보여주는 애플리케이션으로, 대국민 외식의 시대 한양대학교 학생들을 위한 맞춤형 안주를 추천해 드립니다.
+
+1. 고민은 그만! 실시간 날씨 정보와 함께 오늘과 어울리는 안주 조합을 추천해 드립니다.
+현재 날씨와 함께 이런 날씨에 어울리는 안주 조합을 랜덤으로 3가지 추천해 드립니다. 추천된 안주 조합을 누르면 안주를 판매하는 음식점 리스트와 그 음식점의 정보를 보여 드립니다.
+
+2. 요즘은 여기가 핫 해! 한양대 근처의 핫 플레이스들을 보여 드립니다.
+한양대학교 주변 지도를 통해 원하는 지역의 핫 플레이스 리스트를 보여 드립니다. 원하는 음식점을 클릭하면 해당 음식점의 디테일 정보를 보여 드립니다.
+
+3. 재미있게 골라보자! 안주 룰렛을 통해 안주를 고를 수 있습니다.
+앞서 추천해준 곳들중에서도 도저히 못 고르겠다, 오늘은 좀 재미있게 안주를 골라보고 싶다 하신 분들을 위해 안주 룰렛이 준비되어있습니다. 좀 더 재미있게 안주를 골라보세요.
+
+앱의 설명문 (영어) :
+Anjunayo is an application which recommends 3 snacks served with alcoholic beverage and hot places near Hanyang University for Hanyang University students. 
+
+1. Stop considering! Anjunayo will recommend you snacks served with alcoholic beverage which fit with today’s weather.
+We will recommend you 3 snacks served with alcoholic beverage for random. When you click the menu that we recommended, it will show restaurants where this menu is selling and show you a detail information about this store.
+
+2. These restaurants are HOT these days! We will show you hot places near HYU.
+We will show you hot places near HYU by a map. If you click the restaurant that you want to go, it will show you a detail information about that restaurant.
+
+3. You can choose what to eat with snack roulette.
+If you can not choose what to eat from that we recommended, or if you want to choose what to eat by fun, this roulette is prepared for you. Choose your snack with more fun! 
+
+앱의 키워드 :
+한양대 / 왕십리 / 안주 / 핫 플레이스 / 음식점 추천 / 맛집 추천
